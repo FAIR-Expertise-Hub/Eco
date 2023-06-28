@@ -40,6 +40,8 @@ g.add((fdo.DataManagementPlanTemplate, rdf.type, rdfs.Class))
 g.add((fdo.DataManagementPlanTemplate, rdfs.label, rdflib.Literal("Class repsresenting the Data Management Plan Templates")))
 g.add((fdo.DataSteward, rdf.type, rdfs.Class))
 g.add((fdo.DataSteward, rdfs.label, rdflib.Literal("Data Steward")))
+g.add((fdo.Section, rdf.type, rdfs.Class))
+g.add((fdo.Section, rdfs.label, rdflib.Literal("Sections")))
 
 #Property Hierarchy
 #rdfs: subClassOf
