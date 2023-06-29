@@ -85,7 +85,7 @@ for file_id in dmp_file_ids:
             section_title = remove_html_tags(section.get('title'))
             section_number = section.get('number')
             section_node = URIRef(dmp_ns + str(file_id) + "/section/" + str(section_number))
-            section_description = section.get('description')
+            section_description = remove_html_tags(section.get('description'))
 
 
             if section_node:
