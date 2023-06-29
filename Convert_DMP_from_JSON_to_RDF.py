@@ -36,7 +36,6 @@ def remove_html_tags(text):
 ###   safe_uri = re.sub('[^a-zA-Z0-9\-._~]', '_', uri)
 ###   return safe_uri
 
-
 # Iterate over the JSON files and convert to TTL triples
 for file_id in dmp_file_ids:
     file_name = str(file_id) + '.json'
