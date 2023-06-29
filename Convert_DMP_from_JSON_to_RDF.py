@@ -25,10 +25,10 @@ dmp_ns = Namespace("https://fairdmp.online/dmp/vu/")
 
 
 # remove the HTML tags that come from the JSON file
-#def remove_html_tags(text):
- #   """Remove html tags from a string"""
-  #  clean = re.compile('<.*?>')
-   # return html.unescape(re.sub(clean, '', text))
+def remove_html_tags(text):
+    """Remove html tags from a string"""
+    clean = re.compile('<.*?>')
+    return re.sub(clean, '', text)
 
 
 ### def sanitize_uri(uri):
@@ -82,7 +82,7 @@ for file_id in dmp_file_ids:
     for plan in plan_contents:
         sections = plan.get('sections', [])
         for section in sections:
-            section_title = section.get('title')
+            section_title = remove_html_tags(section.get('title'))
             section_number = section.get('number')
             section_node = URIRef(dmp_ns + str(file_id) + "/section/" + str(section_number))
             section_description = section.get('description')
@@ -101,18 +101,18 @@ for file_id in dmp_file_ids:
                 # Extract and add section questions
                 questions = section.get('questions', [])
                 for question in questions:
-                    question_text = question.get('text')
+                    question_text = remove_html_tags(question.get('text'))
                     question_number = question.get('number')
-                    answer = question.get('answer')
+                    answer = (question.get('answer'))
 
                     if question_number and question_text:
                         question_node = URIRef(dmp_ns + str(file_id)+"/section/"+str(section_number)+ "/question/" + str(question_number))
-                        graph.add((question_node, rdf.type, fdo.DMPQuestion))
+                        graph.add((question_node, rdf.type, fdo.DataManagementPlanQuestion))
                         graph.add((question_node, dc.title, Literal(question_text)))
                         graph.add((section_node, fdo.consists_of, question_node))
                         # Add answer text if it exists
                         if answer:
-                            answer_text = (answer.get('text', ''))
+                            answer_text = remove_html_tags(answer.get('text', ''))
                             graph.add((question_node, sdo.acceptedAnswer, Literal(answer_text)))
 
     # Serialize the graph to TTL format
