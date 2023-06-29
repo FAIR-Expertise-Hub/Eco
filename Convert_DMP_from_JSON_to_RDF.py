@@ -31,10 +31,6 @@ def remove_html_tags(text):
     return re.sub(clean, '', text)
 
 
-### def sanitize_uri(uri):
-    # Replace any non-unreserved character with "_"
-###   safe_uri = re.sub('[^a-zA-Z0-9\-._~]', '_', uri)
-###   return safe_uri
 
 # Iterate over the JSON files and convert to TTL triples
 for file_id in dmp_file_ids:
@@ -50,8 +46,6 @@ for file_id in dmp_file_ids:
         template_id = template.get('id')
         if template_title:
             graph.add((file_node, fdo.usesDMPTemplate, Literal(template_title)))
-        if template_id:
-            graph.add((file_node, sdo.identifier, Literal(template_id)))
 
         # Extract and add data contact information
         data_contact = dmp.get('data_contact')
@@ -63,15 +57,15 @@ for file_id in dmp_file_ids:
             if data_contact_email:
                 graph.add((fdo.DataContact, sdo.email, Literal(data_contact_email)))
 
-        # Extract and add user information
-#        users = dmp.get('users', [])
-#        for user in users:
-#            user_email = user.get('email')
-#            if user_email:
-#                graph.add((dmp.file_id, fdo.hasUser, sdo.User))
-#                graph.add((dmp.User, sdo.email, Literal(user_email)))
+        # Extract and add project funder information
+        funder = dmp.get('funder')
+        if funder:
+            funder_name = funder.get('name')
+            if funder_name:
+                graph.add((file_node, sdo.funder, Literal(funder_name)))
 
-        # Extract and add description
+
+        #Extract and add DMP description
         description = dmp.get('description')
         if description:
             graph.add((file_node, dc.description, Literal(description)))
