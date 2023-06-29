@@ -42,6 +42,9 @@ g.add((fdo.DataSteward, rdf.type, rdfs.Class))
 g.add((fdo.DataSteward, rdfs.label, rdflib.Literal("Data Steward")))
 g.add((fdo.Section, rdf.type, rdfs.Class))
 g.add((fdo.Section, rdfs.label, rdflib.Literal("Sections")))
+g.add((fdo.TemplateQuestion, rdf.type, rdfs.Class))
+g.add((fdo.TemplateQuestion, rdfs.label, rdflib.Literal("Questions located in a DMP template")))
+
 
 #Property Hierarchy
 #rdfs: subClassOf
@@ -49,7 +52,6 @@ g.add((fdo.Section, rdfs.label, rdflib.Literal("Sections")))
 #usesdmptemplate
 # ds maintains shuaiDMP
 
-g.add((fdo.RDMPlatform, rdf.type, rdfs.Class))
 
 
 
