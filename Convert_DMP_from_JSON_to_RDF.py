@@ -23,7 +23,6 @@ dmp_ns = Namespace("https://fairdmp.online/dmp/vu/")
 
 
 
-
 # remove the HTML tags that come from the JSON file
 def remove_html_tags(text):
     """Remove html tags from a string"""
