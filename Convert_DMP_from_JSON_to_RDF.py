@@ -96,6 +96,12 @@ for file_id in dmp_file_ids:
                     question_text = remove_html_tags(question.get('text'))
                     question_number = question.get('number')
                     answer = (question.get('answer'))
+                    if section_number == 1 and question_number == 4:
+                        name_pattern = r"<p>(.+)</p>"
+                        match = re.search(name_pattern, str(answer))
+                        if match:
+                            name = match.group(1)
+                            graph.add((file_node, sdo.author, name))
 
                     if question_number and question_text:
                         question_node = URIRef(dmp_ns + str(file_id)+"/section/"+str(section_number)+ "/question/" + str(question_number))
