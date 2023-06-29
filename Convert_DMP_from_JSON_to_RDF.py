@@ -95,13 +95,14 @@ for file_id in dmp_file_ids:
                 for question in questions:
                     question_text = remove_html_tags(question.get('text'))
                     question_number = question.get('number')
-                    answer = (question.get('answer'))
-                    if section_number == 1 and question_number == 4:
-                        name_pattern = r"<p>(.+)</p>"
-                        match = re.search(name_pattern, str(answer))
-                        if match:
-                            name = match.group(1)
-                            graph.add((file_node, sdo.author, name))
+                    answer = question.get('answer')
+                    if section_number == 1:
+                        if question_number == 4:
+                            name_pattern = r"<p>(.*?)</p>"
+                            match = re.search(name_pattern, str(answer))
+                            if match:
+                                name = match.group(1)
+                                graph.add((file_node, sdo.author, Literal(name)))
 
                     if question_number and question_text:
                         question_node = URIRef(dmp_ns + str(file_id)+"/section/"+str(section_number)+ "/question/" + str(question_number))
@@ -110,8 +111,8 @@ for file_id in dmp_file_ids:
                         graph.add((section_node, fdo.consists_of, question_node))
                         # Add answer text if it exists
                         if answer:
-                            answer_text = remove_html_tags(answer.get('text', ''))
-                            graph.add((question_node, sdo.acceptedAnswer, Literal(answer_text)))
+                            answer_text = (answer.get('text', ''))
+                            graph.add((question_node, sdo.acceptedAnswer, (Literal(remove_html_tags(answer_text)))))
 
     # Serialize the graph to TTL format
     graph.serialize(destination='C:/Users/MSI-NB/PycharmProjects/firstProject/ttl_files/DMP1_converted.ttl', format='turtle')
