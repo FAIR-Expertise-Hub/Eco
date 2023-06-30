@@ -78,7 +78,7 @@ for file_id in dmp_file_ids:
         sections = plan.get('sections', [])
         for section in sections:
             section_title = remove_html_tags(section.get('title'))
-            section_number = section.get('number')
+            section_number = int( section.get('number')-1)
             section_node = URIRef(dmp_ns + str(file_id) + "/section/" + str(section_number))
             section_description = remove_html_tags(section.get('description'))
 
@@ -109,8 +109,10 @@ for file_id in dmp_file_ids:
                             if match:
                                 name = match.group(1)
                                 graph.add((file_node, sdo.author, Literal(name)))
+
                     #Get the relations
-                    if section_number == 1:
+                    #real section index 0
+                    if section_number == 0:
                         if question_number == 4:
                             graph.add((question_node, fip["refers-to-principal"], fip.F1))
                         if question_number == 5:
@@ -124,8 +126,24 @@ for file_id in dmp_file_ids:
                             if answer:
                                 answer_text = (answer.get('text', ''))
                                 graph.add((file_node, fip.has_data_steward, (Literal(remove_html_tags(answer_text)))))
-                        #Section 4
-                    if section_number == 5:
+
+                    #real section index 1
+                    if section_number == 1:
+                        if question_number in (4,5,6,7,8,9):
+                            graph.add((question_node, fdo.requiredBy, fdo.VuLegalTeam))
+
+                    #real section index 2
+                    if section_number == 2:
+                        if question_number in (1,2,4,5):
+                            graph.add((question_node, fdo.requiredBy, fdo.VuLegalTeam))
+
+                    #real section index
+                    if section_number == 3:
+                        if question_number in (1,3,4,5,7):
+                            graph.add((question_node, fdo.requiredBy, fdo.VuLegalTeam))
+
+                    #real Section index 4
+                    if section_number == 4:
                         if question_number == 2:
                             graph.add((question_node, fip["refers-to-principal"], fip.F4))
                         if question_number == 3:
@@ -144,7 +162,11 @@ for file_id in dmp_file_ids:
                             graph.add((question_node, fip["refers-to-principal"], fip["A1.2"]))
                         if question_number == 13:
                             graph.add((question_node, fip["refers-to-principal"], fip["R1.1"]))
-                    if section_number == 6:
+                        if question_number in (4,5,6,10,11,12):
+                            graph.add((question_node, fdo.requiredBy, fdo.VuLegalTeam))
+
+                    #real Section index 5
+                    if section_number == 5:
                         if question_number == 1:
                             graph.add((question_node, fip["refers-to-principal"], fip["R1.2"]))
                             graph.add((question_node, fip["refers-to-principal"], fip["F2"]))
@@ -153,7 +175,8 @@ for file_id in dmp_file_ids:
                             graph.add((question_node, fip["refers-to-principal"], fip.F2))
                         if question_number == 3:
                             graph.add((question_node, fip["refers-to-principal"], fip["R1.2"]))
-                    if section_number == 7:
+                    #real Section index 6
+                    if section_number == 6:
                         if question_number == 3:
                             graph.add((question_node, fip["refers-to-principal"], fip["A1.2"]))
 
