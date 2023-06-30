@@ -8,6 +8,8 @@ rdf = RDF
 rdfs = RDFS
 fip = rdflib.Namespace("https://w3id.org/fair/fip/latest/FAIR-Implementation-Community")
 dmp_ns = rdflib.Namespace("https://fairdmp.online/dmp/vu/")
+fip = rdflib.Namespace("https://peta-pico.github.io/FAIR-nanopubs/fip/index-en.html#https://w3id.org/fair/fip/terms/")
+
 
 
 g = rdflib.Graph()
@@ -31,3 +33,9 @@ g.add((fdo.VuTemplate17, fdo.consistsOf, fdo.Section))
 g.add((fdo.Section, fdo.consistsOf, fdo.TemplateQuestions))
 g.add((fdo.DataSteward, rdf.type, FOAF.Person))
 g.add((fdo.VrijeUniversiteitAmsterdam, fdo.providesDMPTemplate, fdo.VuTemplate17))
+g.add((fdo.DataManagementPlan, RDF.type, fip["FAIR-Enabling-Resource"]))
+g.add((fdo.RDMPlatform, rdf.type, fip["FAIR-Enabling-Resource"]))
+g.add((fdo.DataManagementPlanTemplate, rdf.type, fip["FAIR-Enabling-Resource"]))
+
+
+
