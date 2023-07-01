@@ -109,7 +109,7 @@ for file_id in dmp_file_ids:
                                 name = match.group(1)
                                 graph.add((file_node, sdo.author, Literal(name)))
 
-                    #Get the relations
+                    #Get the relations to the FAIR Principles
                     #real section index 0
                     if section_number == 0:
                         if question_number == 4:
