@@ -82,7 +82,6 @@ for file_id in dmp_file_ids:
             section_node = URIRef(dmp_ns + str(file_id) + "/section/" + str(section_number))
             section_description = remove_html_tags(section.get('description'))
 
-
             if section_node:
                 graph.add((section_node, rdf.type, fdo.Section))
                 if section_title:
@@ -102,7 +101,7 @@ for file_id in dmp_file_ids:
                     question_node = URIRef(dmp_ns + str(file_id) + "/section/" + str(section_number) + "/question/" + str(question_number))
 
                     #Get the author
-                    if section_number == 1:
+                    if section_number == 0:
                         if question_number == 4:
                             name_pattern = r"<p>(.*?)</p>"
                             match = re.search(name_pattern, str(answer))
