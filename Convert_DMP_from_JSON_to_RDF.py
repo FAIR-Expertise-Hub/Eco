@@ -114,17 +114,27 @@ for file_id in dmp_file_ids:
                     if section_number == 0:
                         if question_number == 4:
                             graph.add((question_node, fip["refers-to-principal"], fip.F1))
+                            # Duty level
+                            graph.add((sdo.Researcher, fdo.isResponsibleForDMPQuestion, question_node))
                         if question_number == 5:
                             graph.add((question_node, fip["refers-to-principal"], fip.F1))
+                            # Duty level
+                            graph.add((sdo.Researcher, fdo.isResponsibleForDMPQuestion, question_node))
                         if question_number == 6:
                             graph.add((question_node, fip["refers-to-principal"], fip.F1))
+                            # Duty level
+                            graph.add((sdo.Researcher, fdo.isResponsibleForDMPQuestion, question_node))
                         if question_number == 7:
                             graph.add((question_node, fip["refers-to-principal"], fip.F1))
                         if question_number == 8:
                             graph.add((question_node, fip["refers-to-principal"], fip.F1))
+                            # Duty level
+                            graph.add((sdo.Researcher, fdo.isResponsibleForDMPQuestion, question_node))
                             if answer:
                                 answer_text = (answer.get('text', ''))
                                 graph.add((file_node, fip.has_data_steward, (Literal(remove_html_tags(answer_text)))))
+
+
 
                     #real section index 1
                     if section_number == 1:
@@ -136,7 +146,7 @@ for file_id in dmp_file_ids:
                         if question_number in (1,2,4,5):
                             graph.add((question_node, fdo.requiredBy, fdo.VuLegalTeam))
 
-                    #real section index
+                    #real section index 3
                     if section_number == 3:
                         if question_number in (1,3,4,5,7):
                             graph.add((question_node, fdo.requiredBy, fdo.VuLegalTeam))
@@ -145,22 +155,46 @@ for file_id in dmp_file_ids:
                     if section_number == 4:
                         if question_number == 2:
                             graph.add((question_node, fip["refers-to-principal"], fip.F4))
+                            # Duty level
+                            graph.add((sdo.Researcher, fdo.isResponsibleForDMPQuestion, question_node))
                         if question_number == 3:
                             graph.add((question_node, fip["refers-to-principal"], fip.F4))
+                            # Duty level
+                            graph.add((sdo.Researcher, fdo.isResponsibleForDMPQuestion, question_node))
                         if question_number == 6:
                             graph.add((question_node, fip["refers-to-principal"], fip.F4))
+                            # Duty level
+                            graph.add((fdo.RDMPlatform, fdo.isResponsibleForDMPQuestion, question_node))
                         if question_number == 7:
                             graph.add((question_node, fip["refers-to-principal"], fip.F4))
+                            # Duty level
+                            graph.add((fdo.RDMPlatform, fdo.isResponsibleForDMPQuestion, question_node))
                         if question_number == 8:
                             graph.add((question_node, fip["refers-to-principal"], fip.F1))
+                            #Duty level
+                            graph.add((sdo.Researcher, fdo.isResponsibleForDMPQuestion, question_node))
                         if question_number == 9:
                             graph.add((question_node, fip["refers-to-principal"], fip.F1))
+                            #Duty level
+                            graph.add((sdo.Researcher, fdo.isResponsibleForDMPQuestion, question_node))
                         if question_number == 10:
                             graph.add((question_node, fip["refers-to-principal"], fip["A1.2"]))
+                            #Duty level
+                            graph.add((sdo.Researcher, fdo.isResponsibleForDMPQuestion, question_node))
                         if question_number == 11:
                             graph.add((question_node, fip["refers-to-principal"], fip["A1.2"]))
+                            #Duty level
+                            graph.add((sdo.Researcher, fdo.isResponsibleForDMPQuestion, question_node))
+                            graph.add((fdo.RDMSupport, fdo.isResponsibleForDMPQuestion, question_node))
+                        if question_number == 12:
+                            #Duty level
+                            graph.add((sdo.Researcher, fdo.isResponsibleForDMPQuestion, question_node))
+                            graph.add((fdo.RDMSupport, fdo.isResponsibleForDMPQuestion, question_node))
                         if question_number == 13:
                             graph.add((question_node, fip["refers-to-principal"], fip["R1.1"]))
+                            #Duty level
+                            graph.add((sdo.Researcher, fdo.isResponsibleForDMPQuestion, question_node))
+                        #Legal Team
                         if question_number in (4,5,6,10,11,12):
                             graph.add((question_node, fdo.requiredBy, fdo.VuLegalTeam))
 
@@ -169,15 +203,27 @@ for file_id in dmp_file_ids:
                         if question_number == 1:
                             graph.add((question_node, fip["refers-to-principal"], fip["R1.2"]))
                             graph.add((question_node, fip["refers-to-principal"], fip["F2"]))
+                            #Duty level
+                            graph.add((fdo.RDMPlatform, fdo.isResponsibleForDMPQuestion, question_node))
+                            graph.add((sdo.Researcher, fdo.isResponsibleForDMPQuestion, question_node))
                         if question_number == 2:
                             graph.add((question_node, fip["refers-to-principal"], fip["R1.3"]))
                             graph.add((question_node, fip["refers-to-principal"], fip.F2))
+                            #Duty level
+                            graph.add((fdo.RDMPlatform, fdo.isResponsibleForDMPQuestion, question_node))
+                            graph.add((sdo.Researcher, fdo.isResponsibleForDMPQuestion, question_node))
                         if question_number == 3:
                             graph.add((question_node, fip["refers-to-principal"], fip["R1.2"]))
+                            #Duty level
+                            graph.add((fdo.RDMPlatform, fdo.isResponsibleForDMPQuestion, question_node))
+                            graph.add((sdo.Researcher, fdo.isResponsibleForDMPQuestion, question_node))
                     #real Section index 6
                     if section_number == 6:
                         if question_number == 3:
-                            graph.add((question_node, fip["refers-to-principal"], fip["A1.2"]))
+                            graph.add((question_node, fip["refers-to-principal"], fip["A1.2"]))                         
+                            #Duty level
+                            graph.add((sdo.Researcher, fdo.isResponsibleForDMPQuestion, question_node))
+                            graph.add((question_node, fdo.isResponsibleForDMPQuestion, fdo.RDMSupport))
 
                     if question_number and question_text:
                         graph.add((question_node, rdf.type, fdo.DataManagementPlanQuestion))
@@ -185,8 +231,8 @@ for file_id in dmp_file_ids:
                         graph.add((section_node, fdo.consists_of, question_node))
                         # Add answer text if it exists
                         if answer:
-                            answer_text = (answer.get('text', ''))
-                            graph.add((question_node, sdo.acceptedAnswer, (Literal(remove_html_tags(answer_text)))))
+                            answer_text = remove_html_tags(answer.get('text', ''))
+                            graph.add((question_node, sdo.acceptedAnswer, (Literal(answer_text))))
 
     # Serialize the graph to TTL format
     graph.serialize(destination='C:/Users/MSI-NB/PycharmProjects/firstProject/ttl_files/DMP1_converted.ttl', format='turtle')
