@@ -38,6 +38,11 @@ g.add((fdo.DataManagementPlan, RDF.type, fip["FAIR-Enabling-Resource"]))
 g.add((fdo.RDMPlatform, rdf.type, fip["FAIR-Enabling-Resource"]))
 g.add((sdo.Researcher, sdo.department, fdo.ComputerScienceDepartment))
 
+g.add((fdo.UniversityResearchDataManagement, rdfs.subClassOf, fdo.RDMSupport))
+g.add((fdo.FacultyResearchDataManagement, rdfs.subClassOf, fdo.RDMSupport))
+g.add((fdo.DepartmentResearchDataManagement, rdfs.subClassOf, fdo.RDMSupport))
+
+
 
 #g.add((fdo.DataManagementPlanTemplate, rdf.type, fip["FAIR-Enabling-Resource"]))
 # Not sure about this one.
