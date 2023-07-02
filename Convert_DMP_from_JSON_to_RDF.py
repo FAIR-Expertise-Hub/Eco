@@ -116,20 +116,33 @@ for file_id in dmp_file_ids:
                             graph.add((question_node, fip["refers-to-principal"], fip.F1))
                             # Duty level
                             graph.add((sdo.Researcher, fdo.isResponsibleForDMPQuestion, question_node))
+                            #Impact level funder has to be a class
+                            if funder_name:
+                                graph.add((Literal(funder_name), fdo.hasImpactOn, fdo.question_node))
                         if question_number == 5:
                             graph.add((question_node, fip["refers-to-principal"], fip.F1))
                             # Duty level
                             graph.add((sdo.Researcher, fdo.isResponsibleForDMPQuestion, question_node))
+                            # Impact level
+                            if funder_name:
+                                graph.add((Literal(funder_name), fdo.hasImpactOn, fdo.question_node))
                         if question_number == 6:
                             graph.add((question_node, fip["refers-to-principal"], fip.F1))
                             # Duty level
                             graph.add((sdo.Researcher, fdo.isResponsibleForDMPQuestion, question_node))
+                            #Impact level
+                            if funder_name:
+                                graph.add((Literal(funder_name), fdo.hasImpactOn, fdo.question_node))
                         if question_number == 7:
                             graph.add((question_node, fip["refers-to-principal"], fip.F1))
                         if question_number == 8:
                             graph.add((question_node, fip["refers-to-principal"], fip.F1))
                             # Duty level
                             graph.add((sdo.Researcher, fdo.isResponsibleForDMPQuestion, question_node))
+                            # Impact level
+                            if funder_name:
+                                graph.add((Literal(funder_name), fdo.hasImpactOn, fdo.question_node))
+                            #get data steward if exists
                             if answer:
                                 answer_text = (answer.get('text', ''))
                                 graph.add((file_node, fip.has_data_steward, (Literal(remove_html_tags(answer_text)))))
@@ -173,10 +186,16 @@ for file_id in dmp_file_ids:
                             graph.add((question_node, fip["refers-to-principal"], fip.F1))
                             #Duty level
                             graph.add((sdo.Researcher, fdo.isResponsibleForDMPQuestion, question_node))
+                            # Impact level
+                            if funder_name:
+                                graph.add((Literal(funder_name), fdo.hasImpactOn, fdo.question_node))
                         if question_number == 9:
                             graph.add((question_node, fip["refers-to-principal"], fip.F1))
                             #Duty level
                             graph.add((sdo.Researcher, fdo.isResponsibleForDMPQuestion, question_node))
+                            # Impact level
+                            if funder_name:
+                                graph.add((Literal(funder_name), fdo.hasImpactOn, fdo.question_node))
                         if question_number == 10:
                             graph.add((question_node, fip["refers-to-principal"], fip["A1.2"]))
                             #Duty level
