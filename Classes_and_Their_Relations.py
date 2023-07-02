@@ -28,6 +28,8 @@ g = rdflib.Graph()
 
 g.add((fdo.RDMPlatform, rdf.type, rdfs.Class))
 g.add((fdo.RDMPlatform, rdfs.label, rdflib.Literal("RDMSoftware Systems, Data repositories, Data Management Platforms: Including the FIP Wizard,Yoda,Github etc..")))
+g.add((fdo.RDMSupport, rdf.type, rdfs.Class))
+g.add((fdo.RDMSupport, rdfs.label, rdflib.Literal("University Research Data Management, Department Research Data Management, Faculty Research Data Management")))
 g.add((fdo.UniversityEthicalTeam, rdf.type, rdfs.Class))
 g.add((fdo.UniversityEthicalTeam, rdfs.label, rdflib.Literal("The ethical team responsible of preparing the ethical policy")))
 g.add((fdo.UniversityLegalTeam, rdf.type, rdfs.Class))
