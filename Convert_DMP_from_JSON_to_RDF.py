@@ -105,7 +105,7 @@ for file_id in dmp_file_ids:
                     #real section index 0
                     if section_number == 0:
                         if question_number == 4:
-                            graph.add((question_node, fip["refers-to-principal"], fip.F1))
+                            graph.add((question_node, fdo["questionRefersToPrincipal"], fip.F1))
                             # Duty level+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
                             graph.add((sdo.Researcher, fdo.isResponsibleForDMPQuestion, question_node))
                             #Impact level funder has to be a class
@@ -122,7 +122,7 @@ for file_id in dmp_file_ids:
                                 graph.add((file_node, sdo.author, Literal(name)))
 
                         if question_number == 5:
-                            graph.add((question_node, fip["refers-to-principal"], fip.F1))
+                            graph.add((question_node, fdo["questionRefersToPrincipal"], fip.F1))
                             # Duty level+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
                             graph.add((sdo.Researcher, fdo.isResponsibleForDMPQuestion, question_node))
                             # Impact level
@@ -133,7 +133,7 @@ for file_id in dmp_file_ids:
                                 graph.add((Literal(funder_name), fdo.hasImpactOn, fdo.question_node))
 
                         if question_number == 6:
-                            graph.add((question_node, fip["refers-to-principal"], fip.F1))
+                            graph.add((question_node, fdo["questionRefersToPrincipal"], fip.F1))
                             # Duty level+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
                             graph.add((sdo.Researcher, fdo.isResponsibleForDMPQuestion, question_node))
                             #Impact level
@@ -141,10 +141,10 @@ for file_id in dmp_file_ids:
                                 graph.add((Literal(funder_name), fdo.hasImpactOn, fdo.question_node))
 
                         if question_number == 7:
-                            graph.add((question_node, fip["refers-to-principal"], fip.F1))
+                            graph.add((question_node, fdo["questionRefersToPrincipal"], fip.F1))
 
                         if question_number == 8:
-                            graph.add((question_node, fip["refers-to-principal"], fip.F1))
+                            graph.add((question_node, fdo["questionRefersToPrincipal"], fip.F1))
                             # Duty level+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
                             graph.add((sdo.Researcher, fdo.isResponsibleForDMPQuestion, question_node))
                             # Impact level
@@ -178,7 +178,7 @@ for file_id in dmp_file_ids:
                     #real Section index 4-------------------------------------------------------------------------------
                     if section_number == 4:
                         if question_number == 2:
-                            graph.add((question_node, fip["refers-to-principal"], fip.F4))
+                            graph.add((question_node, fdo["questionRefersToPrincipal"], fip.F4))
                             # Duty level+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
                             graph.add((sdo.Researcher, fdo.isResponsibleForDMPQuestion, question_node))
                             #Impact level
@@ -186,28 +186,28 @@ for file_id in dmp_file_ids:
                             graph.add((fdo.RDMPlatform, fdo.hasImpactOn, question_node))
 
                         if question_number == 3:
-                            graph.add((question_node, fip["refers-to-principal"], fip.F4))
+                            graph.add((question_node, fdo["questionRefersToPrincipal"], fip.F4))
                             # Duty level+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
                             graph.add((sdo.Researcher, fdo.isResponsibleForDMPQuestion, question_node))
                             #Impact level
                             graph.add((fdo.FacultyResearchDataManagement, fdo.hasImpactOn, question_node))
 
                         if question_number == 6:
-                            graph.add((question_node, fip["refers-to-principal"], fip.F4))
+                            graph.add((question_node, fdo["questionRefersToPrincipal"], fip.F4))
                             # Duty level+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
                             graph.add((fdo.RDMPlatform, fdo.isResponsibleForDMPQuestion, question_node))
                             # Impact level
                             graph.add((fdo.RDMPlatform, fdo.hasImpactOn, question_node))
 
                         if question_number == 7:
-                            graph.add((question_node, fip["refers-to-principal"], fip.F4))
+                            graph.add((question_node, fdo["questionRefersToPrincipal"], fip.F4))
                             # Duty level+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
                             graph.add((fdo.RDMPlatform, fdo.isResponsibleForDMPQuestion, question_node))
                             # Impact level
                             graph.add((fdo.RDMPlatform, fdo.hasImpactOn, question_node))
 
                         if question_number == 8:
-                            graph.add((question_node, fip["refers-to-principal"], fip.F1))
+                            graph.add((question_node, fdo["questionRefersToPrincipal"], fip.F1))
                             # Duty level+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
                             graph.add((sdo.Researcher, fdo.isResponsibleForDMPQuestion, question_node))
                             # Impact level
@@ -215,12 +215,11 @@ for file_id in dmp_file_ids:
                             graph.add((fdo.FacultyResearchDataManagement, fdo.hasImpactOn, question_node))
                             graph.add((fdo.DepartmentResearchDataManagement, fdo.hasImpactOn, question_node))
                             graph.add((fdo.RDMPlatform, fdo.hasImpactOn, question_node))
-
                             if funder_name:
                                 graph.add((Literal(funder_name), fdo.hasImpactOn, fdo.question_node))
 
                         if question_number == 9:
-                            graph.add((question_node, fip["refers-to-principal"], fip.F1))
+                            graph.add((question_node, fdo["questionRefersToPrincipal"], fip.F1))
                             # Duty level+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
                             graph.add((sdo.Researcher, fdo.isResponsibleForDMPQuestion, question_node))
                             # Impact level
@@ -232,14 +231,14 @@ for file_id in dmp_file_ids:
                                 graph.add((Literal(funder_name), fdo.hasImpactOn, fdo.question_node))
 
                         if question_number == 10:
-                            graph.add((question_node, fip["refers-to-principal"], fip["A1.2"]))
+                            graph.add((question_node, fdo["questionRefersToPrincipal"], fip["A1.2"]))
                             # Duty level+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
                             graph.add((sdo.Researcher, fdo.isResponsibleForDMPQuestion, question_node))
                             # Impact level
                             graph.add((fdo.RDMPlatform, fdo.hasImpactOn, question_node))
 
                         if question_number == 11:
-                            graph.add((question_node, fip["refers-to-principal"], fip["A1.2"]))
+                            graph.add((question_node, fdo["questionRefersToPrincipal"], fip["A1.2"]))
                             # Duty level+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
                             graph.add((sdo.Researcher, fdo.isResponsibleForDMPQuestion, question_node))
                             graph.add((fdo.RDMSupport, fdo.isResponsibleForDMPQuestion, question_node))
@@ -252,7 +251,7 @@ for file_id in dmp_file_ids:
                             graph.add((fdo.RDMSupport, fdo.isResponsibleForDMPQuestion, question_node))
 
                         if question_number == 13:
-                            graph.add((question_node, fip["refers-to-principal"], fip["R1.1"]))
+                            graph.add((question_node, fdo["questionRefersToPrincipal"], fip["R1.1"]))
                             # Duty level+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
                             graph.add((sdo.Researcher, fdo.isResponsibleForDMPQuestion, question_node))
                         #Legal Team
@@ -262,8 +261,8 @@ for file_id in dmp_file_ids:
                     #real Section index 5-------------------------------------------------------------------------------
                     if section_number == 5:
                         if question_number == 1:
-                            graph.add((question_node, fip["refers-to-principal"], fip["R1.2"]))
-                            graph.add((question_node, fip["refers-to-principal"], fip["F2"]))
+                            graph.add((question_node, fdo["questionRefersToPrincipal"], fip["R1.2"]))
+                            graph.add((question_node, fdo["questionRefersToPrincipal"], fip["F2"]))
                             # Duty level+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
                             graph.add((fdo.RDMPlatform, fdo.isResponsibleForDMPQuestion, question_node))
                             graph.add((sdo.Researcher, fdo.isResponsibleForDMPQuestion, question_node))
@@ -271,8 +270,8 @@ for file_id in dmp_file_ids:
                             graph.add((fdo.RDMPlatform, fdo.hasImpactOn, question_node))
 
                         if question_number == 2:
-                            graph.add((question_node, fip["refers-to-principal"], fip["R1.3"]))
-                            graph.add((question_node, fip["refers-to-principal"], fip.F2))
+                            graph.add((question_node, fdo["questionRefersToPrincipal"], fip["R1.3"]))
+                            graph.add((question_node, fdo["questionRefersToPrincipal"], fip.F2))
                             # Duty level+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
                             graph.add((fdo.RDMPlatform, fdo.isResponsibleForDMPQuestion, question_node))
                             graph.add((sdo.Researcher, fdo.isResponsibleForDMPQuestion, question_node))
@@ -280,7 +279,7 @@ for file_id in dmp_file_ids:
                             graph.add((fdo.RDMPlatform, fdo.hasImpactOn, question_node))
 
                         if question_number == 3:
-                            graph.add((question_node, fip["refers-to-principal"], fip["R1.2"]))
+                            graph.add((question_node, fdo["questionRefersToPrincipal"], fip["R1.2"]))
                             # Duty level+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
                             graph.add((fdo.RDMPlatform, fdo.isResponsibleForDMPQuestion, question_node))
                             graph.add((sdo.Researcher, fdo.isResponsibleForDMPQuestion, question_node))
@@ -289,7 +288,7 @@ for file_id in dmp_file_ids:
                     #real Section index 6-------------------------------------------------------------------------------
                     if section_number == 6:
                         if question_number == 3:
-                            graph.add((question_node, fip["refers-to-principal"], fip["A1.2"]))                         
+                            graph.add((question_node, fdo["questionRefersToPrincipal"], fip["A1.2"]))
                             # Duty level+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
                             graph.add((sdo.Researcher, fdo.isResponsibleForDMPQuestion, question_node))
                             graph.add((fdo.UniversityResearchDataManagement, fdo.isResponsibleForDMPQuestion, question_node))
