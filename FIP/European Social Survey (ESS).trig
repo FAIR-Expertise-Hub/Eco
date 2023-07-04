@@ -1,0 +1,1786 @@
+
+# Declaration FIP-Question-F1-MD ----------------------------------------------
+@prefix : <http://purl.org/nanopub/temp/fip-declaration-np/7e6c3e0d-ab35-4433-aea7-37c44167441b/ba288486-9316-4008-9849-aefc96f808f7/8b26ff47-97f2-4576-917c-9457eb706a40#> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix dcat: <https://www.w3.org/ns/dcat#> .
+@prefix fip: <https://w3id.org/fair/fip/terms/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+:Head {
+  : a np:Nanopublication ;
+    np:hasAssertion :assertion ;
+    np:hasProvenance :provenance ;
+    np:hasPublicationInfo :pubinfo .
+}
+
+:assertion {
+  :declaration a fip:FIP-Declaration .
+  :declaration fip:refers-to-question fip:FIP-Question-F1-MD .
+  :declaration fip:declared-by <http://purl.org/np/RAykrMeYjXsZsZx-pX4kOVdxxUbm7Ohz4fCk89dsHL_2o#ESS> .
+  :declaration fip:considerations "" .
+  :declaration dcat:startDate "2022-06-01"^^xsd:date .
+  :declaration dcat:endDate "2050-12-31"^^xsd:date .
+  
+  :declaration fip:declares-current-use-of <http://purl.org/np/RA5tPfcwo9y5_NJ8hXMv0SH5zGcAmqsu93AmqV5HpFqbA#DDI-URN> .
+
+}
+
+:provenance {
+  :assertion dct:creator orcid:0000-0002-1261-9930 .
+}
+
+:pubinfo {
+  : dct:created "2023-07-04T10:59:18Z"^^xsd:dateTime ;
+    dct:creator <https://fip-wizard.ds-wizard.org> ;
+    prov:wasDerivedFrom <https://w3id.org/fip/wizard/7e6c3e0d-ab35-4433-aea7-37c44167441b> ;
+    dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
+}
+
+
+# Declaration FIP-Question-F1-D ----------------------------------------------
+@prefix : <http://purl.org/nanopub/temp/fip-declaration-np/7e6c3e0d-ab35-4433-aea7-37c44167441b/ba288486-9316-4008-9849-aefc96f808f7/9711fe32-35c3-4230-8d86-22a8aa9b6070#> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix dcat: <https://www.w3.org/ns/dcat#> .
+@prefix fip: <https://w3id.org/fair/fip/terms/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+:Head {
+  : a np:Nanopublication ;
+    np:hasAssertion :assertion ;
+    np:hasProvenance :provenance ;
+    np:hasPublicationInfo :pubinfo .
+}
+
+:assertion {
+  :declaration a fip:FIP-Declaration .
+  :declaration fip:refers-to-question fip:FIP-Question-F1-D .
+  :declaration fip:declared-by <http://purl.org/np/RAykrMeYjXsZsZx-pX4kOVdxxUbm7Ohz4fCk89dsHL_2o#ESS> .
+  :declaration fip:considerations "" .
+  :declaration dcat:startDate "2022-06-01"^^xsd:date .
+  :declaration dcat:endDate "2050-12-31"^^xsd:date .
+  
+  :declaration fip:declares-current-use-of <http://purl.org/np/RAnAWGdeI_1GGmDAqv-vZjby5XqbL2ZujNz1vgwK_6cRI#DOI> .
+
+}
+
+:provenance {
+  :assertion dct:creator orcid:0000-0002-1261-9930 .
+}
+
+:pubinfo {
+  : dct:created "2023-07-04T10:59:18Z"^^xsd:dateTime ;
+    dct:creator <https://fip-wizard.ds-wizard.org> ;
+    prov:wasDerivedFrom <https://w3id.org/fip/wizard/7e6c3e0d-ab35-4433-aea7-37c44167441b> ;
+    dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
+}
+
+
+# Declaration FIP-Question-F1-D ----------------------------------------------
+@prefix : <http://purl.org/nanopub/temp/fip-declaration-np/7e6c3e0d-ab35-4433-aea7-37c44167441b/ba288486-9316-4008-9849-aefc96f808f7/08967e1c-f551-4cfb-ba40-338b3cf7fc52#> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix dcat: <https://www.w3.org/ns/dcat#> .
+@prefix fip: <https://w3id.org/fair/fip/terms/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+:Head {
+  : a np:Nanopublication ;
+    np:hasAssertion :assertion ;
+    np:hasProvenance :provenance ;
+    np:hasPublicationInfo :pubinfo .
+}
+
+:assertion {
+  :declaration a fip:FIP-Declaration .
+  :declaration fip:refers-to-question fip:FIP-Question-F1-D .
+  :declaration fip:declared-by <http://purl.org/np/RAykrMeYjXsZsZx-pX4kOVdxxUbm7Ohz4fCk89dsHL_2o#ESS> .
+  :declaration fip:considerations "" .
+  :declaration dcat:startDate "2022-06-01"^^xsd:date .
+  :declaration dcat:endDate "2050-12-31"^^xsd:date .
+  
+  :declaration fip:declares-current-use-of <http://purl.org/np/RA5tPfcwo9y5_NJ8hXMv0SH5zGcAmqsu93AmqV5HpFqbA#DDI-URN> .
+
+}
+
+:provenance {
+  :assertion dct:creator orcid:0000-0002-1261-9930 .
+}
+
+:pubinfo {
+  : dct:created "2023-07-04T10:59:18Z"^^xsd:dateTime ;
+    dct:creator <https://fip-wizard.ds-wizard.org> ;
+    prov:wasDerivedFrom <https://w3id.org/fip/wizard/7e6c3e0d-ab35-4433-aea7-37c44167441b> ;
+    dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
+}
+
+
+# Declaration FIP-Question-F2 ----------------------------------------------
+@prefix : <http://purl.org/nanopub/temp/fip-declaration-np/7e6c3e0d-ab35-4433-aea7-37c44167441b/ba288486-9316-4008-9849-aefc96f808f7/c5a12be2-2b48-4ddf-9084-5e169e6b060d#> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix dcat: <https://www.w3.org/ns/dcat#> .
+@prefix fip: <https://w3id.org/fair/fip/terms/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+:Head {
+  : a np:Nanopublication ;
+    np:hasAssertion :assertion ;
+    np:hasProvenance :provenance ;
+    np:hasPublicationInfo :pubinfo .
+}
+
+:assertion {
+  :declaration a fip:FIP-Declaration .
+  :declaration fip:refers-to-question fip:FIP-Question-F2 .
+  :declaration fip:declared-by <http://purl.org/np/RAykrMeYjXsZsZx-pX4kOVdxxUbm7Ohz4fCk89dsHL_2o#ESS> .
+  :declaration fip:considerations "" .
+  :declaration dcat:startDate "2022-06-01"^^xsd:date .
+  :declaration dcat:endDate "2050-12-31"^^xsd:date .
+  
+  :declaration fip:declares-current-use-of <http://purl.org/np/RAfE73MeNzkRIq8thrVTIYwh8k0Ia0liajjv4KhnLxMks#DDI-L_3.3> .
+
+}
+
+:provenance {
+  :assertion dct:creator orcid:0000-0002-1261-9930 .
+}
+
+:pubinfo {
+  : dct:created "2023-07-04T10:59:18Z"^^xsd:dateTime ;
+    dct:creator <https://fip-wizard.ds-wizard.org> ;
+    prov:wasDerivedFrom <https://w3id.org/fip/wizard/7e6c3e0d-ab35-4433-aea7-37c44167441b> ;
+    dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
+}
+
+
+# Declaration FIP-Question-F3 ----------------------------------------------
+@prefix : <http://purl.org/nanopub/temp/fip-declaration-np/7e6c3e0d-ab35-4433-aea7-37c44167441b/ba288486-9316-4008-9849-aefc96f808f7/c415f9f3-ceec-4936-b5df-d366c9f80726#> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix dcat: <https://www.w3.org/ns/dcat#> .
+@prefix fip: <https://w3id.org/fair/fip/terms/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+:Head {
+  : a np:Nanopublication ;
+    np:hasAssertion :assertion ;
+    np:hasProvenance :provenance ;
+    np:hasPublicationInfo :pubinfo .
+}
+
+:assertion {
+  :declaration a fip:FIP-Declaration .
+  :declaration fip:refers-to-question fip:FIP-Question-F3 .
+  :declaration fip:declared-by <http://purl.org/np/RAykrMeYjXsZsZx-pX4kOVdxxUbm7Ohz4fCk89dsHL_2o#ESS> .
+  :declaration fip:considerations "" .
+  :declaration dcat:startDate "2022-06-01"^^xsd:date .
+  :declaration dcat:endDate "2050-12-31"^^xsd:date .
+  
+  :declaration fip:declares-current-use-of <http://purl.org/np/RAfE73MeNzkRIq8thrVTIYwh8k0Ia0liajjv4KhnLxMks#DDI-L_3.3> .
+
+}
+
+:provenance {
+  :assertion dct:creator orcid:0000-0002-1261-9930 .
+}
+
+:pubinfo {
+  : dct:created "2023-07-04T10:59:18Z"^^xsd:dateTime ;
+    dct:creator <https://fip-wizard.ds-wizard.org> ;
+    prov:wasDerivedFrom <https://w3id.org/fip/wizard/7e6c3e0d-ab35-4433-aea7-37c44167441b> ;
+    dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
+}
+
+
+# Declaration FIP-Question-F4-MD ----------------------------------------------
+@prefix : <http://purl.org/nanopub/temp/fip-declaration-np/7e6c3e0d-ab35-4433-aea7-37c44167441b/ba288486-9316-4008-9849-aefc96f808f7/9c67e537-9d2a-41c4-b99a-ab2ca177b3fd#> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix dcat: <https://www.w3.org/ns/dcat#> .
+@prefix fip: <https://w3id.org/fair/fip/terms/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+:Head {
+  : a np:Nanopublication ;
+    np:hasAssertion :assertion ;
+    np:hasProvenance :provenance ;
+    np:hasPublicationInfo :pubinfo .
+}
+
+:assertion {
+  :declaration a fip:FIP-Declaration .
+  :declaration fip:refers-to-question fip:FIP-Question-F4-MD .
+  :declaration fip:declared-by <http://purl.org/np/RAykrMeYjXsZsZx-pX4kOVdxxUbm7Ohz4fCk89dsHL_2o#ESS> .
+  :declaration fip:considerations "" .
+  :declaration dcat:startDate "2022-06-01"^^xsd:date .
+  :declaration dcat:endDate "2050-12-31"^^xsd:date .
+  
+  :declaration fip:declares-current-use-of <http://purl.org/np/RAllY7f2kVf2bjuVQA1Rg_LXCji5aep3QYAtvJv2dTcu8#Colectica-Platform> .
+
+}
+
+:provenance {
+  :assertion dct:creator orcid:0000-0002-1261-9930 .
+}
+
+:pubinfo {
+  : dct:created "2023-07-04T10:59:18Z"^^xsd:dateTime ;
+    dct:creator <https://fip-wizard.ds-wizard.org> ;
+    prov:wasDerivedFrom <https://w3id.org/fip/wizard/7e6c3e0d-ab35-4433-aea7-37c44167441b> ;
+    dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
+}
+
+
+# Declaration FIP-Question-F4-D ----------------------------------------------
+@prefix : <http://purl.org/nanopub/temp/fip-declaration-np/7e6c3e0d-ab35-4433-aea7-37c44167441b/ba288486-9316-4008-9849-aefc96f808f7/eae69894-7756-494e-b16a-18e955f4f664#> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix dcat: <https://www.w3.org/ns/dcat#> .
+@prefix fip: <https://w3id.org/fair/fip/terms/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+:Head {
+  : a np:Nanopublication ;
+    np:hasAssertion :assertion ;
+    np:hasProvenance :provenance ;
+    np:hasPublicationInfo :pubinfo .
+}
+
+:assertion {
+  :declaration a fip:FIP-Declaration .
+  :declaration fip:refers-to-question fip:FIP-Question-F4-D .
+  :declaration fip:declared-by <http://purl.org/np/RAykrMeYjXsZsZx-pX4kOVdxxUbm7Ohz4fCk89dsHL_2o#ESS> .
+  :declaration fip:considerations "" .
+  :declaration dcat:startDate "2022-06-01"^^xsd:date .
+  :declaration dcat:endDate "2050-12-31"^^xsd:date .
+  
+  :declaration fip:declares-current-use-of <http://purl.org/np/RAnFuHGHkmj9NMFuvGUHDkaodYcmdP_0dJGmDY2hJY03A#EOSC> .
+
+}
+
+:provenance {
+  :assertion dct:creator orcid:0000-0002-1261-9930 .
+}
+
+:pubinfo {
+  : dct:created "2023-07-04T10:59:18Z"^^xsd:dateTime ;
+    dct:creator <https://fip-wizard.ds-wizard.org> ;
+    prov:wasDerivedFrom <https://w3id.org/fip/wizard/7e6c3e0d-ab35-4433-aea7-37c44167441b> ;
+    dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
+}
+
+
+# Declaration FIP-Question-F4-D ----------------------------------------------
+@prefix : <http://purl.org/nanopub/temp/fip-declaration-np/7e6c3e0d-ab35-4433-aea7-37c44167441b/ba288486-9316-4008-9849-aefc96f808f7/1355530a-0f61-448d-be54-da6421eeb458#> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix dcat: <https://www.w3.org/ns/dcat#> .
+@prefix fip: <https://w3id.org/fair/fip/terms/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+:Head {
+  : a np:Nanopublication ;
+    np:hasAssertion :assertion ;
+    np:hasProvenance :provenance ;
+    np:hasPublicationInfo :pubinfo .
+}
+
+:assertion {
+  :declaration a fip:FIP-Declaration .
+  :declaration fip:refers-to-question fip:FIP-Question-F4-D .
+  :declaration fip:declared-by <http://purl.org/np/RAykrMeYjXsZsZx-pX4kOVdxxUbm7Ohz4fCk89dsHL_2o#ESS> .
+  :declaration fip:considerations "" .
+  :declaration dcat:startDate "2022-06-01"^^xsd:date .
+  :declaration dcat:endDate "2050-12-31"^^xsd:date .
+  
+  :declaration fip:declares-current-use-of <http://purl.org/np/RAy7uFei0e2XdpG_Qyf_uQGdI6S9RNgpgy-kafI79Pzfw#ESS-DP> .
+
+}
+
+:provenance {
+  :assertion dct:creator orcid:0000-0002-1261-9930 .
+}
+
+:pubinfo {
+  : dct:created "2023-07-04T10:59:18Z"^^xsd:dateTime ;
+    dct:creator <https://fip-wizard.ds-wizard.org> ;
+    prov:wasDerivedFrom <https://w3id.org/fip/wizard/7e6c3e0d-ab35-4433-aea7-37c44167441b> ;
+    dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
+}
+
+
+# Declaration FIP-Question-A1.1-MD ----------------------------------------------
+@prefix : <http://purl.org/nanopub/temp/fip-declaration-np/7e6c3e0d-ab35-4433-aea7-37c44167441b/ba288486-9316-4008-9849-aefc96f808f7/3c6883f9-1815-4d9b-9e7d-4acca2d1bc30#> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix dcat: <https://www.w3.org/ns/dcat#> .
+@prefix fip: <https://w3id.org/fair/fip/terms/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+:Head {
+  : a np:Nanopublication ;
+    np:hasAssertion :assertion ;
+    np:hasProvenance :provenance ;
+    np:hasPublicationInfo :pubinfo .
+}
+
+:assertion {
+  :declaration a fip:FIP-Declaration .
+  :declaration fip:refers-to-question fip:FIP-Question-A1.1-MD .
+  :declaration fip:declared-by <http://purl.org/np/RAykrMeYjXsZsZx-pX4kOVdxxUbm7Ohz4fCk89dsHL_2o#ESS> .
+  :declaration fip:considerations "" .
+  :declaration dcat:startDate "2022-06-01"^^xsd:date .
+  :declaration dcat:endDate "2050-12-31"^^xsd:date .
+  
+  :declaration fip:declares-current-use-of <http://purl.org/np/RAF1ANn-BCFop0OBMOC7S8NtG0y_xYhRX4tAu37XZVCo0#HTTPS> .
+
+}
+
+:provenance {
+  :assertion dct:creator orcid:0000-0002-1261-9930 .
+}
+
+:pubinfo {
+  : dct:created "2023-07-04T10:59:18Z"^^xsd:dateTime ;
+    dct:creator <https://fip-wizard.ds-wizard.org> ;
+    prov:wasDerivedFrom <https://w3id.org/fip/wizard/7e6c3e0d-ab35-4433-aea7-37c44167441b> ;
+    dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
+}
+
+
+# Declaration FIP-Question-A1.1-MD ----------------------------------------------
+@prefix : <http://purl.org/nanopub/temp/fip-declaration-np/7e6c3e0d-ab35-4433-aea7-37c44167441b/ba288486-9316-4008-9849-aefc96f808f7/427d220b-9726-407d-a416-7ba31e052549#> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix dcat: <https://www.w3.org/ns/dcat#> .
+@prefix fip: <https://w3id.org/fair/fip/terms/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+:Head {
+  : a np:Nanopublication ;
+    np:hasAssertion :assertion ;
+    np:hasProvenance :provenance ;
+    np:hasPublicationInfo :pubinfo .
+}
+
+:assertion {
+  :declaration a fip:FIP-Declaration .
+  :declaration fip:refers-to-question fip:FIP-Question-A1.1-MD .
+  :declaration fip:declared-by <http://purl.org/np/RAykrMeYjXsZsZx-pX4kOVdxxUbm7Ohz4fCk89dsHL_2o#ESS> .
+  :declaration fip:considerations "" .
+  :declaration dcat:startDate "2022-06-01"^^xsd:date .
+  :declaration dcat:endDate "2050-12-31"^^xsd:date .
+  
+  :declaration fip:declares-current-use-of <http://purl.org/np/RAr5cThd55i2peHrKJ_x0RKu18AeDFMWdiNWbpgAglpxQ#GraphQL> .
+
+}
+
+:provenance {
+  :assertion dct:creator orcid:0000-0002-1261-9930 .
+}
+
+:pubinfo {
+  : dct:created "2023-07-04T10:59:18Z"^^xsd:dateTime ;
+    dct:creator <https://fip-wizard.ds-wizard.org> ;
+    prov:wasDerivedFrom <https://w3id.org/fip/wizard/7e6c3e0d-ab35-4433-aea7-37c44167441b> ;
+    dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
+}
+
+
+# Declaration FIP-Question-A1.1-D ----------------------------------------------
+@prefix : <http://purl.org/nanopub/temp/fip-declaration-np/7e6c3e0d-ab35-4433-aea7-37c44167441b/ba288486-9316-4008-9849-aefc96f808f7/0d59c45b-a370-4352-a6b0-24f532b6f518#> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix dcat: <https://www.w3.org/ns/dcat#> .
+@prefix fip: <https://w3id.org/fair/fip/terms/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+:Head {
+  : a np:Nanopublication ;
+    np:hasAssertion :assertion ;
+    np:hasProvenance :provenance ;
+    np:hasPublicationInfo :pubinfo .
+}
+
+:assertion {
+  :declaration a fip:FIP-Declaration .
+  :declaration fip:refers-to-question fip:FIP-Question-A1.1-D .
+  :declaration fip:declared-by <http://purl.org/np/RAykrMeYjXsZsZx-pX4kOVdxxUbm7Ohz4fCk89dsHL_2o#ESS> .
+  :declaration fip:considerations "" .
+  :declaration dcat:startDate "2022-06-01"^^xsd:date .
+  :declaration dcat:endDate "2050-12-31"^^xsd:date .
+  
+  :declaration fip:declares-current-use-of <http://purl.org/np/RAF1ANn-BCFop0OBMOC7S8NtG0y_xYhRX4tAu37XZVCo0#HTTPS> .
+
+}
+
+:provenance {
+  :assertion dct:creator orcid:0000-0002-1261-9930 .
+}
+
+:pubinfo {
+  : dct:created "2023-07-04T10:59:18Z"^^xsd:dateTime ;
+    dct:creator <https://fip-wizard.ds-wizard.org> ;
+    prov:wasDerivedFrom <https://w3id.org/fip/wizard/7e6c3e0d-ab35-4433-aea7-37c44167441b> ;
+    dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
+}
+
+
+# Declaration FIP-Question-A1.1-D ----------------------------------------------
+@prefix : <http://purl.org/nanopub/temp/fip-declaration-np/7e6c3e0d-ab35-4433-aea7-37c44167441b/ba288486-9316-4008-9849-aefc96f808f7/0fac7a1f-6f66-425c-810d-8b5f16b7e974#> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix dcat: <https://www.w3.org/ns/dcat#> .
+@prefix fip: <https://w3id.org/fair/fip/terms/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+:Head {
+  : a np:Nanopublication ;
+    np:hasAssertion :assertion ;
+    np:hasProvenance :provenance ;
+    np:hasPublicationInfo :pubinfo .
+}
+
+:assertion {
+  :declaration a fip:FIP-Declaration .
+  :declaration fip:refers-to-question fip:FIP-Question-A1.1-D .
+  :declaration fip:declared-by <http://purl.org/np/RAykrMeYjXsZsZx-pX4kOVdxxUbm7Ohz4fCk89dsHL_2o#ESS> .
+  :declaration fip:considerations "" .
+  :declaration dcat:startDate "2022-06-01"^^xsd:date .
+  :declaration dcat:endDate "2050-12-31"^^xsd:date .
+  
+  :declaration fip:declares-current-use-of <http://purl.org/np/RAr5cThd55i2peHrKJ_x0RKu18AeDFMWdiNWbpgAglpxQ#GraphQL> .
+
+}
+
+:provenance {
+  :assertion dct:creator orcid:0000-0002-1261-9930 .
+}
+
+:pubinfo {
+  : dct:created "2023-07-04T10:59:18Z"^^xsd:dateTime ;
+    dct:creator <https://fip-wizard.ds-wizard.org> ;
+    prov:wasDerivedFrom <https://w3id.org/fip/wizard/7e6c3e0d-ab35-4433-aea7-37c44167441b> ;
+    dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
+}
+
+
+# Declaration FIP-Question-A1.2-MD ----------------------------------------------
+@prefix : <http://purl.org/nanopub/temp/fip-declaration-np/7e6c3e0d-ab35-4433-aea7-37c44167441b/ba288486-9316-4008-9849-aefc96f808f7/2e20e552-71ab-4723-878f-4aa7901bfc27#> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix dcat: <https://www.w3.org/ns/dcat#> .
+@prefix fip: <https://w3id.org/fair/fip/terms/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+:Head {
+  : a np:Nanopublication ;
+    np:hasAssertion :assertion ;
+    np:hasProvenance :provenance ;
+    np:hasPublicationInfo :pubinfo .
+}
+
+:assertion {
+  :declaration a fip:FIP-Declaration .
+  :declaration fip:refers-to-question fip:FIP-Question-A1.2-MD .
+  :declaration fip:declared-by <http://purl.org/np/RAykrMeYjXsZsZx-pX4kOVdxxUbm7Ohz4fCk89dsHL_2o#ESS> .
+  :declaration fip:considerations "" .
+  :declaration dcat:startDate "2022-06-01"^^xsd:date .
+  :declaration dcat:endDate "2050-12-31"^^xsd:date .
+  
+  :declaration fip:declares-current-use-of <http://purl.org/np/RAF52NKQCturaZMnb88a-BcWcGMVdhQf_9yw0dZt5I1TA#eduGAIN> .
+
+}
+
+:provenance {
+  :assertion dct:creator orcid:0000-0002-1261-9930 .
+}
+
+:pubinfo {
+  : dct:created "2023-07-04T10:59:18Z"^^xsd:dateTime ;
+    dct:creator <https://fip-wizard.ds-wizard.org> ;
+    prov:wasDerivedFrom <https://w3id.org/fip/wizard/7e6c3e0d-ab35-4433-aea7-37c44167441b> ;
+    dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
+}
+
+
+# Declaration FIP-Question-A1.2-MD ----------------------------------------------
+@prefix : <http://purl.org/nanopub/temp/fip-declaration-np/7e6c3e0d-ab35-4433-aea7-37c44167441b/ba288486-9316-4008-9849-aefc96f808f7/cb8f6a13-48cc-4972-a840-6fc8691e1b29#> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix dcat: <https://www.w3.org/ns/dcat#> .
+@prefix fip: <https://w3id.org/fair/fip/terms/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+:Head {
+  : a np:Nanopublication ;
+    np:hasAssertion :assertion ;
+    np:hasProvenance :provenance ;
+    np:hasPublicationInfo :pubinfo .
+}
+
+:assertion {
+  :declaration a fip:FIP-Declaration .
+  :declaration fip:refers-to-question fip:FIP-Question-A1.2-MD .
+  :declaration fip:declared-by <http://purl.org/np/RAykrMeYjXsZsZx-pX4kOVdxxUbm7Ohz4fCk89dsHL_2o#ESS> .
+  :declaration fip:considerations "" .
+  :declaration dcat:startDate "2022-06-01"^^xsd:date .
+  :declaration dcat:endDate "2050-12-31"^^xsd:date .
+  
+  :declaration fip:declares-current-use-of <http://purl.org/np/RAESutxI_uSzDxudrQsj_lRPGbUyRUVB2M41F8gCEeR88#OpenID> .
+
+}
+
+:provenance {
+  :assertion dct:creator orcid:0000-0002-1261-9930 .
+}
+
+:pubinfo {
+  : dct:created "2023-07-04T10:59:18Z"^^xsd:dateTime ;
+    dct:creator <https://fip-wizard.ds-wizard.org> ;
+    prov:wasDerivedFrom <https://w3id.org/fip/wizard/7e6c3e0d-ab35-4433-aea7-37c44167441b> ;
+    dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
+}
+
+
+# Declaration FIP-Question-A1.2-D ----------------------------------------------
+@prefix : <http://purl.org/nanopub/temp/fip-declaration-np/7e6c3e0d-ab35-4433-aea7-37c44167441b/ba288486-9316-4008-9849-aefc96f808f7/01ae850f-b843-470a-93a0-a906e0a60715#> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix dcat: <https://www.w3.org/ns/dcat#> .
+@prefix fip: <https://w3id.org/fair/fip/terms/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+:Head {
+  : a np:Nanopublication ;
+    np:hasAssertion :assertion ;
+    np:hasProvenance :provenance ;
+    np:hasPublicationInfo :pubinfo .
+}
+
+:assertion {
+  :declaration a fip:FIP-Declaration .
+  :declaration fip:refers-to-question fip:FIP-Question-A1.2-D .
+  :declaration fip:declared-by <http://purl.org/np/RAykrMeYjXsZsZx-pX4kOVdxxUbm7Ohz4fCk89dsHL_2o#ESS> .
+  :declaration fip:considerations "" .
+  :declaration dcat:startDate "2022-06-01"^^xsd:date .
+  :declaration dcat:endDate "2050-12-31"^^xsd:date .
+  
+  :declaration fip:declares-current-use-of <http://purl.org/np/RAF52NKQCturaZMnb88a-BcWcGMVdhQf_9yw0dZt5I1TA#eduGAIN> .
+
+}
+
+:provenance {
+  :assertion dct:creator orcid:0000-0002-1261-9930 .
+}
+
+:pubinfo {
+  : dct:created "2023-07-04T10:59:18Z"^^xsd:dateTime ;
+    dct:creator <https://fip-wizard.ds-wizard.org> ;
+    prov:wasDerivedFrom <https://w3id.org/fip/wizard/7e6c3e0d-ab35-4433-aea7-37c44167441b> ;
+    dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
+}
+
+
+# Declaration FIP-Question-A1.2-D ----------------------------------------------
+@prefix : <http://purl.org/nanopub/temp/fip-declaration-np/7e6c3e0d-ab35-4433-aea7-37c44167441b/ba288486-9316-4008-9849-aefc96f808f7/5fe01288-d824-45fe-9944-c4c80499c1de#> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix dcat: <https://www.w3.org/ns/dcat#> .
+@prefix fip: <https://w3id.org/fair/fip/terms/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+:Head {
+  : a np:Nanopublication ;
+    np:hasAssertion :assertion ;
+    np:hasProvenance :provenance ;
+    np:hasPublicationInfo :pubinfo .
+}
+
+:assertion {
+  :declaration a fip:FIP-Declaration .
+  :declaration fip:refers-to-question fip:FIP-Question-A1.2-D .
+  :declaration fip:declared-by <http://purl.org/np/RAykrMeYjXsZsZx-pX4kOVdxxUbm7Ohz4fCk89dsHL_2o#ESS> .
+  :declaration fip:considerations "" .
+  :declaration dcat:startDate "2022-06-01"^^xsd:date .
+  :declaration dcat:endDate "2050-12-31"^^xsd:date .
+  
+  :declaration fip:declares-current-use-of <http://purl.org/np/RAESutxI_uSzDxudrQsj_lRPGbUyRUVB2M41F8gCEeR88#OpenID> .
+
+}
+
+:provenance {
+  :assertion dct:creator orcid:0000-0002-1261-9930 .
+}
+
+:pubinfo {
+  : dct:created "2023-07-04T10:59:18Z"^^xsd:dateTime ;
+    dct:creator <https://fip-wizard.ds-wizard.org> ;
+    prov:wasDerivedFrom <https://w3id.org/fip/wizard/7e6c3e0d-ab35-4433-aea7-37c44167441b> ;
+    dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
+}
+
+
+# Declaration FIP-Question-A1.2-D ----------------------------------------------
+@prefix : <http://purl.org/nanopub/temp/fip-declaration-np/7e6c3e0d-ab35-4433-aea7-37c44167441b/ba288486-9316-4008-9849-aefc96f808f7/6299d893-ff13-4538-98cf-0c983d82e75a#> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix dcat: <https://www.w3.org/ns/dcat#> .
+@prefix fip: <https://w3id.org/fair/fip/terms/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+:Head {
+  : a np:Nanopublication ;
+    np:hasAssertion :assertion ;
+    np:hasProvenance :provenance ;
+    np:hasPublicationInfo :pubinfo .
+}
+
+:assertion {
+  :declaration a fip:FIP-Declaration .
+  :declaration fip:refers-to-question fip:FIP-Question-A1.2-D .
+  :declaration fip:declared-by <http://purl.org/np/RAykrMeYjXsZsZx-pX4kOVdxxUbm7Ohz4fCk89dsHL_2o#ESS> .
+  :declaration fip:considerations "" .
+  :declaration dcat:startDate "2022-06-01"^^xsd:date .
+  :declaration dcat:endDate "2050-12-31"^^xsd:date .
+  
+  :declaration fip:declares-current-use-of <http://purl.org/np/RA12dG5IfsHBLDCTgiPnp0vRhSsp9o760tKOWyR_ueon4#Azure-AD> .
+
+}
+
+:provenance {
+  :assertion dct:creator orcid:0000-0002-1261-9930 .
+}
+
+:pubinfo {
+  : dct:created "2023-07-04T10:59:18Z"^^xsd:dateTime ;
+    dct:creator <https://fip-wizard.ds-wizard.org> ;
+    prov:wasDerivedFrom <https://w3id.org/fip/wizard/7e6c3e0d-ab35-4433-aea7-37c44167441b> ;
+    dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
+}
+
+
+# Declaration F2 (No Choice) -------------------------
+@prefix : <http://purl.org/nanopub/temp/fip-declaration-np/7e6c3e0d-ab35-4433-aea7-37c44167441b/ba288486-9316-4008-9849-aefc96f808f7/89df9313-ce5f-4e01-9a7d-64f19c35b98d#> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix dcat: <https://www.w3.org/ns/dcat#> .
+@prefix fip: <https://w3id.org/fair/fip/terms/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+:Head {
+  : a np:Nanopublication ;
+    np:hasAssertion :assertion ;
+    np:hasProvenance :provenance ;
+    np:hasPublicationInfo :pubinfo .
+}
+
+:assertion {
+  :declaration a fip:FIP-No-Choice-Declaration .
+  :declaration fip:refers-to-question fip:FIP-Question-A2 .
+  :declaration fip:declared-by <http://purl.org/np/RAykrMeYjXsZsZx-pX4kOVdxxUbm7Ohz4fCk89dsHL_2o#ESS> .
+  :declaration fip:considerations "ESS Policy" .
+  :declaration dcat:startDate "2022-06-01"^^xsd:date .
+  :declaration dcat:endDate "2050-12-31"^^xsd:date .
+}
+
+:provenance {
+  :assertion dct:creator orcid:0000-0002-1261-9930 .
+}
+
+:pubinfo {
+  : dct:created "2023-07-04T10:59:18Z"^^xsd:dateTime ;
+    dct:creator <https://fip-wizard.ds-wizard.org> ;
+    prov:wasDerivedFrom <https://w3id.org/fip/wizard/7e6c3e0d-ab35-4433-aea7-37c44167441b> ;
+    dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
+}
+
+
+  
+# Declaration FIP-Question-I1-MD ----------------------------------------------
+@prefix : <http://purl.org/nanopub/temp/fip-declaration-np/7e6c3e0d-ab35-4433-aea7-37c44167441b/ba288486-9316-4008-9849-aefc96f808f7/8e62a06c-ae3c-420d-accc-90458fb0757d#> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix dcat: <https://www.w3.org/ns/dcat#> .
+@prefix fip: <https://w3id.org/fair/fip/terms/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+:Head {
+  : a np:Nanopublication ;
+    np:hasAssertion :assertion ;
+    np:hasProvenance :provenance ;
+    np:hasPublicationInfo :pubinfo .
+}
+
+:assertion {
+  :declaration a fip:FIP-Declaration .
+  :declaration fip:refers-to-question fip:FIP-Question-I1-MD .
+  :declaration fip:declared-by <http://purl.org/np/RAykrMeYjXsZsZx-pX4kOVdxxUbm7Ohz4fCk89dsHL_2o#ESS> .
+  :declaration fip:considerations "ESS Policy" .
+  :declaration dcat:startDate "2022-06-01"^^xsd:date .
+  :declaration dcat:endDate "2050-12-31"^^xsd:date .
+  
+  :declaration fip:declares-current-use-of <http://purl.org/np/RAypIT9C-q0n_Y2tOPqCOM19ETJNWdvNI40rVF11AMoiw#JSON> .
+
+}
+
+:provenance {
+  :assertion dct:creator orcid:0000-0002-1261-9930 .
+}
+
+:pubinfo {
+  : dct:created "2023-07-04T10:59:18Z"^^xsd:dateTime ;
+    dct:creator <https://fip-wizard.ds-wizard.org> ;
+    prov:wasDerivedFrom <https://w3id.org/fip/wizard/7e6c3e0d-ab35-4433-aea7-37c44167441b> ;
+    dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
+}
+
+
+# Declaration FIP-Question-I1-D ----------------------------------------------
+@prefix : <http://purl.org/nanopub/temp/fip-declaration-np/7e6c3e0d-ab35-4433-aea7-37c44167441b/ba288486-9316-4008-9849-aefc96f808f7/e473289e-77e6-4b44-9bfc-d98d81fa82fa#> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix dcat: <https://www.w3.org/ns/dcat#> .
+@prefix fip: <https://w3id.org/fair/fip/terms/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+:Head {
+  : a np:Nanopublication ;
+    np:hasAssertion :assertion ;
+    np:hasProvenance :provenance ;
+    np:hasPublicationInfo :pubinfo .
+}
+
+:assertion {
+  :declaration a fip:FIP-Declaration .
+  :declaration fip:refers-to-question fip:FIP-Question-I1-D .
+  :declaration fip:declared-by <http://purl.org/np/RAykrMeYjXsZsZx-pX4kOVdxxUbm7Ohz4fCk89dsHL_2o#ESS> .
+  :declaration fip:considerations "ESS Policy" .
+  :declaration dcat:startDate "2022-06-01"^^xsd:date .
+  :declaration dcat:endDate "2050-12-31"^^xsd:date .
+  
+  :declaration fip:declares-current-use-of <http://purl.org/np/RAJdVVQVtRnX3vWa4ONUbZwEjX4Al59Wpy_FWduIhCrWs#Parquet> .
+
+}
+
+:provenance {
+  :assertion dct:creator orcid:0000-0002-1261-9930 .
+}
+
+:pubinfo {
+  : dct:created "2023-07-04T10:59:18Z"^^xsd:dateTime ;
+    dct:creator <https://fip-wizard.ds-wizard.org> ;
+    prov:wasDerivedFrom <https://w3id.org/fip/wizard/7e6c3e0d-ab35-4433-aea7-37c44167441b> ;
+    dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
+}
+
+
+# Declaration FIP-Question-I2-MD ----------------------------------------------
+@prefix : <http://purl.org/nanopub/temp/fip-declaration-np/7e6c3e0d-ab35-4433-aea7-37c44167441b/ba288486-9316-4008-9849-aefc96f808f7/3d8e9aa0-e180-4552-9212-89526bf567f8#> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix dcat: <https://www.w3.org/ns/dcat#> .
+@prefix fip: <https://w3id.org/fair/fip/terms/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+:Head {
+  : a np:Nanopublication ;
+    np:hasAssertion :assertion ;
+    np:hasProvenance :provenance ;
+    np:hasPublicationInfo :pubinfo .
+}
+
+:assertion {
+  :declaration a fip:FIP-Declaration .
+  :declaration fip:refers-to-question fip:FIP-Question-I2-MD .
+  :declaration fip:declared-by <http://purl.org/np/RAykrMeYjXsZsZx-pX4kOVdxxUbm7Ohz4fCk89dsHL_2o#ESS> .
+  :declaration fip:considerations "ESS Policy" .
+  :declaration dcat:startDate "2022-06-01"^^xsd:date .
+  :declaration dcat:endDate "2050-12-31"^^xsd:date .
+  
+  :declaration fip:declares-current-use-of <http://purl.org/np/RAAxtbHgxTTzLJWXVoUW3tTE5dS6OXJaSN3sPj9h_8qtk#DDI-L_3.3_struct_codelists> .
+
+}
+
+:provenance {
+  :assertion dct:creator orcid:0000-0002-1261-9930 .
+}
+
+:pubinfo {
+  : dct:created "2023-07-04T10:59:18Z"^^xsd:dateTime ;
+    dct:creator <https://fip-wizard.ds-wizard.org> ;
+    prov:wasDerivedFrom <https://w3id.org/fip/wizard/7e6c3e0d-ab35-4433-aea7-37c44167441b> ;
+    dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
+}
+
+
+# Declaration FIP-Question-I2-D ----------------------------------------------
+@prefix : <http://purl.org/nanopub/temp/fip-declaration-np/7e6c3e0d-ab35-4433-aea7-37c44167441b/ba288486-9316-4008-9849-aefc96f808f7/423e5793-c1ad-4f41-ae34-a4dba739c695#> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix dcat: <https://www.w3.org/ns/dcat#> .
+@prefix fip: <https://w3id.org/fair/fip/terms/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+:Head {
+  : a np:Nanopublication ;
+    np:hasAssertion :assertion ;
+    np:hasProvenance :provenance ;
+    np:hasPublicationInfo :pubinfo .
+}
+
+:assertion {
+  :declaration a fip:FIP-Declaration .
+  :declaration fip:refers-to-question fip:FIP-Question-I2-D .
+  :declaration fip:declared-by <http://purl.org/np/RAykrMeYjXsZsZx-pX4kOVdxxUbm7Ohz4fCk89dsHL_2o#ESS> .
+  :declaration fip:considerations "ESS Policy" .
+  :declaration dcat:startDate "2022-06-01"^^xsd:date .
+  :declaration dcat:endDate "2050-12-31"^^xsd:date .
+  
+  :declaration fip:declares-current-use-of <http://purl.org/np/RAKy68K-ubbaV8BKrbYyJQ1NYKcCkvQPpgrQ7rdWbvjRU#ISO_3166> .
+
+}
+
+:provenance {
+  :assertion dct:creator orcid:0000-0002-1261-9930 .
+}
+
+:pubinfo {
+  : dct:created "2023-07-04T10:59:18Z"^^xsd:dateTime ;
+    dct:creator <https://fip-wizard.ds-wizard.org> ;
+    prov:wasDerivedFrom <https://w3id.org/fip/wizard/7e6c3e0d-ab35-4433-aea7-37c44167441b> ;
+    dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
+}
+
+
+# Declaration FIP-Question-I2-D ----------------------------------------------
+@prefix : <http://purl.org/nanopub/temp/fip-declaration-np/7e6c3e0d-ab35-4433-aea7-37c44167441b/ba288486-9316-4008-9849-aefc96f808f7/ca27e09a-ad00-4329-9141-84ed5765597a#> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix dcat: <https://www.w3.org/ns/dcat#> .
+@prefix fip: <https://w3id.org/fair/fip/terms/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+:Head {
+  : a np:Nanopublication ;
+    np:hasAssertion :assertion ;
+    np:hasProvenance :provenance ;
+    np:hasPublicationInfo :pubinfo .
+}
+
+:assertion {
+  :declaration a fip:FIP-Declaration .
+  :declaration fip:refers-to-question fip:FIP-Question-I2-D .
+  :declaration fip:declared-by <http://purl.org/np/RAykrMeYjXsZsZx-pX4kOVdxxUbm7Ohz4fCk89dsHL_2o#ESS> .
+  :declaration fip:considerations "ESS Policy" .
+  :declaration dcat:startDate "2022-06-01"^^xsd:date .
+  :declaration dcat:endDate "2050-12-31"^^xsd:date .
+  
+  :declaration fip:declares-current-use-of <http://purl.org/np/RAbeYoehIiTuZc__wi39KNK5HuQ4oulFpRoAFYE5sym4s#ISO_639-2> .
+
+}
+
+:provenance {
+  :assertion dct:creator orcid:0000-0002-1261-9930 .
+}
+
+:pubinfo {
+  : dct:created "2023-07-04T10:59:18Z"^^xsd:dateTime ;
+    dct:creator <https://fip-wizard.ds-wizard.org> ;
+    prov:wasDerivedFrom <https://w3id.org/fip/wizard/7e6c3e0d-ab35-4433-aea7-37c44167441b> ;
+    dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
+}
+
+
+# Declaration FIP-Question-I2-D ----------------------------------------------
+@prefix : <http://purl.org/nanopub/temp/fip-declaration-np/7e6c3e0d-ab35-4433-aea7-37c44167441b/ba288486-9316-4008-9849-aefc96f808f7/c792d07b-46dd-45e0-b187-ad5e26937b4c#> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix dcat: <https://www.w3.org/ns/dcat#> .
+@prefix fip: <https://w3id.org/fair/fip/terms/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+:Head {
+  : a np:Nanopublication ;
+    np:hasAssertion :assertion ;
+    np:hasProvenance :provenance ;
+    np:hasPublicationInfo :pubinfo .
+}
+
+:assertion {
+  :declaration a fip:FIP-Declaration .
+  :declaration fip:refers-to-question fip:FIP-Question-I2-D .
+  :declaration fip:declared-by <http://purl.org/np/RAykrMeYjXsZsZx-pX4kOVdxxUbm7Ohz4fCk89dsHL_2o#ESS> .
+  :declaration fip:considerations "ESS Policy" .
+  :declaration dcat:startDate "2022-06-01"^^xsd:date .
+  :declaration dcat:endDate "2050-12-31"^^xsd:date .
+  
+  :declaration fip:declares-current-use-of <http://purl.org/np/RAU9ujry3tOnJgSfby438Y6LmBcDrjjyKaBo0E-uMOt0o#NACE-Rev-2> .
+
+}
+
+:provenance {
+  :assertion dct:creator orcid:0000-0002-1261-9930 .
+}
+
+:pubinfo {
+  : dct:created "2023-07-04T10:59:18Z"^^xsd:dateTime ;
+    dct:creator <https://fip-wizard.ds-wizard.org> ;
+    prov:wasDerivedFrom <https://w3id.org/fip/wizard/7e6c3e0d-ab35-4433-aea7-37c44167441b> ;
+    dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
+}
+
+
+# Declaration FIP-Question-I2-D ----------------------------------------------
+@prefix : <http://purl.org/nanopub/temp/fip-declaration-np/7e6c3e0d-ab35-4433-aea7-37c44167441b/ba288486-9316-4008-9849-aefc96f808f7/68b1591c-7a80-4b8d-b66e-36d89a906027#> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix dcat: <https://www.w3.org/ns/dcat#> .
+@prefix fip: <https://w3id.org/fair/fip/terms/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+:Head {
+  : a np:Nanopublication ;
+    np:hasAssertion :assertion ;
+    np:hasProvenance :provenance ;
+    np:hasPublicationInfo :pubinfo .
+}
+
+:assertion {
+  :declaration a fip:FIP-Declaration .
+  :declaration fip:refers-to-question fip:FIP-Question-I2-D .
+  :declaration fip:declared-by <http://purl.org/np/RAykrMeYjXsZsZx-pX4kOVdxxUbm7Ohz4fCk89dsHL_2o#ESS> .
+  :declaration fip:considerations "ESS Policy" .
+  :declaration dcat:startDate "2022-06-01"^^xsd:date .
+  :declaration dcat:endDate "2050-12-31"^^xsd:date .
+  
+  :declaration fip:declares-current-use-of <http://purl.org/np/RAWvGFfn3-nO45zmAO8sUaPD0TlSiwkEbPD8EBw40wQFA#ISCO-08> .
+
+}
+
+:provenance {
+  :assertion dct:creator orcid:0000-0002-1261-9930 .
+}
+
+:pubinfo {
+  : dct:created "2023-07-04T10:59:18Z"^^xsd:dateTime ;
+    dct:creator <https://fip-wizard.ds-wizard.org> ;
+    prov:wasDerivedFrom <https://w3id.org/fip/wizard/7e6c3e0d-ab35-4433-aea7-37c44167441b> ;
+    dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
+}
+
+
+# Declaration FIP-Question-I2-D ----------------------------------------------
+@prefix : <http://purl.org/nanopub/temp/fip-declaration-np/7e6c3e0d-ab35-4433-aea7-37c44167441b/ba288486-9316-4008-9849-aefc96f808f7/6cfb2013-422e-4ef3-bea0-cbe0c6d18a52#> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix dcat: <https://www.w3.org/ns/dcat#> .
+@prefix fip: <https://w3id.org/fair/fip/terms/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+:Head {
+  : a np:Nanopublication ;
+    np:hasAssertion :assertion ;
+    np:hasProvenance :provenance ;
+    np:hasPublicationInfo :pubinfo .
+}
+
+:assertion {
+  :declaration a fip:FIP-Declaration .
+  :declaration fip:refers-to-question fip:FIP-Question-I2-D .
+  :declaration fip:declared-by <http://purl.org/np/RAykrMeYjXsZsZx-pX4kOVdxxUbm7Ohz4fCk89dsHL_2o#ESS> .
+  :declaration fip:considerations "ESS Policy" .
+  :declaration dcat:startDate "2022-06-01"^^xsd:date .
+  :declaration dcat:endDate "2050-12-31"^^xsd:date .
+  
+  :declaration fip:declares-current-use-of <http://purl.org/np/RAOHq4u3yUtYpqdw1ZYFpBhFlZwoGsG3uTk7TZYUzWDqI#nuts3> .
+
+}
+
+:provenance {
+  :assertion dct:creator orcid:0000-0002-1261-9930 .
+}
+
+:pubinfo {
+  : dct:created "2023-07-04T10:59:18Z"^^xsd:dateTime ;
+    dct:creator <https://fip-wizard.ds-wizard.org> ;
+    prov:wasDerivedFrom <https://w3id.org/fip/wizard/7e6c3e0d-ab35-4433-aea7-37c44167441b> ;
+    dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
+}
+
+
+# Declaration FIP-Question-I2-D ----------------------------------------------
+@prefix : <http://purl.org/nanopub/temp/fip-declaration-np/7e6c3e0d-ab35-4433-aea7-37c44167441b/ba288486-9316-4008-9849-aefc96f808f7/8d599172-58a5-42a2-8adc-4e2a9206be66#> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix dcat: <https://www.w3.org/ns/dcat#> .
+@prefix fip: <https://w3id.org/fair/fip/terms/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+:Head {
+  : a np:Nanopublication ;
+    np:hasAssertion :assertion ;
+    np:hasProvenance :provenance ;
+    np:hasPublicationInfo :pubinfo .
+}
+
+:assertion {
+  :declaration a fip:FIP-Declaration .
+  :declaration fip:refers-to-question fip:FIP-Question-I2-D .
+  :declaration fip:declared-by <http://purl.org/np/RAykrMeYjXsZsZx-pX4kOVdxxUbm7Ohz4fCk89dsHL_2o#ESS> .
+  :declaration fip:considerations "ESS Policy" .
+  :declaration dcat:startDate "2022-06-01"^^xsd:date .
+  :declaration dcat:endDate "2050-12-31"^^xsd:date .
+  
+  :declaration fip:declares-current-use-of <http://purl.org/np/RAZVaY2uNntIyIJVo_f43W9csVA__TohoawN9ZzM0SECs#DDI-Controlled-Vocabularies> .
+
+}
+
+:provenance {
+  :assertion dct:creator orcid:0000-0002-1261-9930 .
+}
+
+:pubinfo {
+  : dct:created "2023-07-04T10:59:18Z"^^xsd:dateTime ;
+    dct:creator <https://fip-wizard.ds-wizard.org> ;
+    prov:wasDerivedFrom <https://w3id.org/fip/wizard/7e6c3e0d-ab35-4433-aea7-37c44167441b> ;
+    dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
+}
+
+
+# Declaration FIP-Question-I2-D ----------------------------------------------
+@prefix : <http://purl.org/nanopub/temp/fip-declaration-np/7e6c3e0d-ab35-4433-aea7-37c44167441b/ba288486-9316-4008-9849-aefc96f808f7/ea273ee9-5f0d-43c7-bf23-35d76a0da9fd#> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix dcat: <https://www.w3.org/ns/dcat#> .
+@prefix fip: <https://w3id.org/fair/fip/terms/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+:Head {
+  : a np:Nanopublication ;
+    np:hasAssertion :assertion ;
+    np:hasProvenance :provenance ;
+    np:hasPublicationInfo :pubinfo .
+}
+
+:assertion {
+  :declaration a fip:FIP-Declaration .
+  :declaration fip:refers-to-question fip:FIP-Question-I2-D .
+  :declaration fip:declared-by <http://purl.org/np/RAykrMeYjXsZsZx-pX4kOVdxxUbm7Ohz4fCk89dsHL_2o#ESS> .
+  :declaration fip:considerations "ESS Policy" .
+  :declaration dcat:startDate "2022-06-01"^^xsd:date .
+  :declaration dcat:endDate "2050-12-31"^^xsd:date .
+  
+  :declaration fip:declares-current-use-of <http://purl.org/np/RApSSuO7fciGYz4CSYHnqQZ60qDx6pvEdraDhBmBLJrGA#CESSDA-Topic-Classification> .
+
+}
+
+:provenance {
+  :assertion dct:creator orcid:0000-0002-1261-9930 .
+}
+
+:pubinfo {
+  : dct:created "2023-07-04T10:59:18Z"^^xsd:dateTime ;
+    dct:creator <https://fip-wizard.ds-wizard.org> ;
+    prov:wasDerivedFrom <https://w3id.org/fip/wizard/7e6c3e0d-ab35-4433-aea7-37c44167441b> ;
+    dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
+}
+
+
+# Declaration FIP-Question-I2-D ----------------------------------------------
+@prefix : <http://purl.org/nanopub/temp/fip-declaration-np/7e6c3e0d-ab35-4433-aea7-37c44167441b/ba288486-9316-4008-9849-aefc96f808f7/fe1ccf40-64ac-4aea-98e3-9cb011a6098c#> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix dcat: <https://www.w3.org/ns/dcat#> .
+@prefix fip: <https://w3id.org/fair/fip/terms/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+:Head {
+  : a np:Nanopublication ;
+    np:hasAssertion :assertion ;
+    np:hasProvenance :provenance ;
+    np:hasPublicationInfo :pubinfo .
+}
+
+:assertion {
+  :declaration a fip:FIP-Declaration .
+  :declaration fip:refers-to-question fip:FIP-Question-I2-D .
+  :declaration fip:declared-by <http://purl.org/np/RAykrMeYjXsZsZx-pX4kOVdxxUbm7Ohz4fCk89dsHL_2o#ESS> .
+  :declaration fip:considerations "ESS Policy" .
+  :declaration dcat:startDate "2022-06-01"^^xsd:date .
+  :declaration dcat:endDate "2050-12-31"^^xsd:date .
+  
+  :declaration fip:declares-current-use-of <http://purl.org/np/RAi3JE1dw2QeTb7VLWyCrDSMAUkD3DU6Nlke1Nhu8tEws#ELSST> .
+
+}
+
+:provenance {
+  :assertion dct:creator orcid:0000-0002-1261-9930 .
+}
+
+:pubinfo {
+  : dct:created "2023-07-04T10:59:18Z"^^xsd:dateTime ;
+    dct:creator <https://fip-wizard.ds-wizard.org> ;
+    prov:wasDerivedFrom <https://w3id.org/fip/wizard/7e6c3e0d-ab35-4433-aea7-37c44167441b> ;
+    dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
+}
+
+
+# Declaration FIP-Question-I3-MD ----------------------------------------------
+@prefix : <http://purl.org/nanopub/temp/fip-declaration-np/7e6c3e0d-ab35-4433-aea7-37c44167441b/ba288486-9316-4008-9849-aefc96f808f7/9f994c1b-ca41-43dc-ad4a-7f0703e26bdb#> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix dcat: <https://www.w3.org/ns/dcat#> .
+@prefix fip: <https://w3id.org/fair/fip/terms/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+:Head {
+  : a np:Nanopublication ;
+    np:hasAssertion :assertion ;
+    np:hasProvenance :provenance ;
+    np:hasPublicationInfo :pubinfo .
+}
+
+:assertion {
+  :declaration a fip:FIP-Declaration .
+  :declaration fip:refers-to-question fip:FIP-Question-I3-MD .
+  :declaration fip:declared-by <http://purl.org/np/RAykrMeYjXsZsZx-pX4kOVdxxUbm7Ohz4fCk89dsHL_2o#ESS> .
+  :declaration fip:considerations "ESS Policy" .
+  :declaration dcat:startDate "2022-06-01"^^xsd:date .
+  :declaration dcat:endDate "2050-12-31"^^xsd:date .
+  
+  :declaration fip:declares-current-use-of <http://purl.org/np/RAfE73MeNzkRIq8thrVTIYwh8k0Ia0liajjv4KhnLxMks#DDI-L_3.3> .
+
+}
+
+:provenance {
+  :assertion dct:creator orcid:0000-0002-1261-9930 .
+}
+
+:pubinfo {
+  : dct:created "2023-07-04T10:59:18Z"^^xsd:dateTime ;
+    dct:creator <https://fip-wizard.ds-wizard.org> ;
+    prov:wasDerivedFrom <https://w3id.org/fip/wizard/7e6c3e0d-ab35-4433-aea7-37c44167441b> ;
+    dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
+}
+
+
+# Declaration FIP-Question-I3-MD ----------------------------------------------
+@prefix : <http://purl.org/nanopub/temp/fip-declaration-np/7e6c3e0d-ab35-4433-aea7-37c44167441b/ba288486-9316-4008-9849-aefc96f808f7/5b026e62-70ef-46f0-bb38-9147a9d42c6a#> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix dcat: <https://www.w3.org/ns/dcat#> .
+@prefix fip: <https://w3id.org/fair/fip/terms/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+:Head {
+  : a np:Nanopublication ;
+    np:hasAssertion :assertion ;
+    np:hasProvenance :provenance ;
+    np:hasPublicationInfo :pubinfo .
+}
+
+:assertion {
+  :declaration a fip:FIP-Declaration .
+  :declaration fip:refers-to-question fip:FIP-Question-I3-MD .
+  :declaration fip:declared-by <http://purl.org/np/RAykrMeYjXsZsZx-pX4kOVdxxUbm7Ohz4fCk89dsHL_2o#ESS> .
+  :declaration fip:considerations "ESS Policy" .
+  :declaration dcat:startDate "2022-06-01"^^xsd:date .
+  :declaration dcat:endDate "2050-12-31"^^xsd:date .
+  
+  :declaration fip:declares-current-use-of <http://purl.org/np/RAS14Aks7x2b1Z2yFUXa4Av5FAv4SngQ0TY6cZn_ftHzg#DDI-CDI> .
+
+}
+
+:provenance {
+  :assertion dct:creator orcid:0000-0002-1261-9930 .
+}
+
+:pubinfo {
+  : dct:created "2023-07-04T10:59:18Z"^^xsd:dateTime ;
+    dct:creator <https://fip-wizard.ds-wizard.org> ;
+    prov:wasDerivedFrom <https://w3id.org/fip/wizard/7e6c3e0d-ab35-4433-aea7-37c44167441b> ;
+    dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
+}
+
+
+# Declaration FIP-Question-I3-D ----------------------------------------------
+@prefix : <http://purl.org/nanopub/temp/fip-declaration-np/7e6c3e0d-ab35-4433-aea7-37c44167441b/ba288486-9316-4008-9849-aefc96f808f7/4b50525e-da58-41af-a5e9-897afea94ba9#> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix dcat: <https://www.w3.org/ns/dcat#> .
+@prefix fip: <https://w3id.org/fair/fip/terms/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+:Head {
+  : a np:Nanopublication ;
+    np:hasAssertion :assertion ;
+    np:hasProvenance :provenance ;
+    np:hasPublicationInfo :pubinfo .
+}
+
+:assertion {
+  :declaration a fip:FIP-Declaration .
+  :declaration fip:refers-to-question fip:FIP-Question-I3-D .
+  :declaration fip:declared-by <http://purl.org/np/RAykrMeYjXsZsZx-pX4kOVdxxUbm7Ohz4fCk89dsHL_2o#ESS> .
+  :declaration fip:considerations "ESS Policy" .
+  :declaration dcat:startDate "2022-06-01"^^xsd:date .
+  :declaration dcat:endDate "2050-12-31"^^xsd:date .
+  
+  :declaration fip:declares-current-use-of <http://purl.org/np/RAfE73MeNzkRIq8thrVTIYwh8k0Ia0liajjv4KhnLxMks#DDI-L_3.3> .
+
+}
+
+:provenance {
+  :assertion dct:creator orcid:0000-0002-1261-9930 .
+}
+
+:pubinfo {
+  : dct:created "2023-07-04T10:59:18Z"^^xsd:dateTime ;
+    dct:creator <https://fip-wizard.ds-wizard.org> ;
+    prov:wasDerivedFrom <https://w3id.org/fip/wizard/7e6c3e0d-ab35-4433-aea7-37c44167441b> ;
+    dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
+}
+
+
+# Declaration FIP-Question-R1.1-MD ----------------------------------------------
+@prefix : <http://purl.org/nanopub/temp/fip-declaration-np/7e6c3e0d-ab35-4433-aea7-37c44167441b/ba288486-9316-4008-9849-aefc96f808f7/867b75fc-06e9-4934-afbd-1743fe9091a3#> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix dcat: <https://www.w3.org/ns/dcat#> .
+@prefix fip: <https://w3id.org/fair/fip/terms/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+:Head {
+  : a np:Nanopublication ;
+    np:hasAssertion :assertion ;
+    np:hasProvenance :provenance ;
+    np:hasPublicationInfo :pubinfo .
+}
+
+:assertion {
+  :declaration a fip:FIP-Declaration .
+  :declaration fip:refers-to-question fip:FIP-Question-R1.1-MD .
+  :declaration fip:declared-by <http://purl.org/np/RAykrMeYjXsZsZx-pX4kOVdxxUbm7Ohz4fCk89dsHL_2o#ESS> .
+  :declaration fip:considerations "ESS Policy" .
+  :declaration dcat:startDate "2022-06-01"^^xsd:date .
+  :declaration dcat:endDate "2050-12-31"^^xsd:date .
+  
+  :declaration fip:declares-current-use-of <http://purl.org/np/RAEEcqbP_ghoZdqL-qsrjYp3YREEZMKuXb4t7xSGnIov8#CC-BY-SA-4.0> .
+
+}
+
+:provenance {
+  :assertion dct:creator orcid:0000-0002-1261-9930 .
+}
+
+:pubinfo {
+  : dct:created "2023-07-04T10:59:18Z"^^xsd:dateTime ;
+    dct:creator <https://fip-wizard.ds-wizard.org> ;
+    prov:wasDerivedFrom <https://w3id.org/fip/wizard/7e6c3e0d-ab35-4433-aea7-37c44167441b> ;
+    dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
+}
+
+
+# Declaration FIP-Question-R1.1-D ----------------------------------------------
+@prefix : <http://purl.org/nanopub/temp/fip-declaration-np/7e6c3e0d-ab35-4433-aea7-37c44167441b/ba288486-9316-4008-9849-aefc96f808f7/856a68c4-939d-452d-8b85-f2602d61a0fb#> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix dcat: <https://www.w3.org/ns/dcat#> .
+@prefix fip: <https://w3id.org/fair/fip/terms/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+:Head {
+  : a np:Nanopublication ;
+    np:hasAssertion :assertion ;
+    np:hasProvenance :provenance ;
+    np:hasPublicationInfo :pubinfo .
+}
+
+:assertion {
+  :declaration a fip:FIP-Declaration .
+  :declaration fip:refers-to-question fip:FIP-Question-R1.1-D .
+  :declaration fip:declared-by <http://purl.org/np/RAykrMeYjXsZsZx-pX4kOVdxxUbm7Ohz4fCk89dsHL_2o#ESS> .
+  :declaration fip:considerations "ESS Policy" .
+  :declaration dcat:startDate "2022-06-01"^^xsd:date .
+  :declaration dcat:endDate "2050-12-31"^^xsd:date .
+  
+  :declaration fip:declares-current-use-of <http://purl.org/np/RAzULQmwy3wZ8laY-ZKZ3kXGmAihweBvKMU70RR638804#CC-BY-NC-SA-4.0> .
+
+}
+
+:provenance {
+  :assertion dct:creator orcid:0000-0002-1261-9930 .
+}
+
+:pubinfo {
+  : dct:created "2023-07-04T10:59:18Z"^^xsd:dateTime ;
+    dct:creator <https://fip-wizard.ds-wizard.org> ;
+    prov:wasDerivedFrom <https://w3id.org/fip/wizard/7e6c3e0d-ab35-4433-aea7-37c44167441b> ;
+    dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
+}
+
+
+# Declaration FIP-Question-R1.2-MD ----------------------------------------------
+@prefix : <http://purl.org/nanopub/temp/fip-declaration-np/7e6c3e0d-ab35-4433-aea7-37c44167441b/ba288486-9316-4008-9849-aefc96f808f7/a2850b97-8010-4d85-b361-646d96e407cf#> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix dcat: <https://www.w3.org/ns/dcat#> .
+@prefix fip: <https://w3id.org/fair/fip/terms/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+:Head {
+  : a np:Nanopublication ;
+    np:hasAssertion :assertion ;
+    np:hasProvenance :provenance ;
+    np:hasPublicationInfo :pubinfo .
+}
+
+:assertion {
+  :declaration a fip:FIP-Declaration .
+  :declaration fip:refers-to-question fip:FIP-Question-R1.2-MD .
+  :declaration fip:declared-by <http://purl.org/np/RAykrMeYjXsZsZx-pX4kOVdxxUbm7Ohz4fCk89dsHL_2o#ESS> .
+  :declaration fip:considerations "ESS Policy" .
+  :declaration dcat:startDate "2022-06-01"^^xsd:date .
+  :declaration dcat:endDate "2050-12-31"^^xsd:date .
+  
+  :declaration fip:declares-current-use-of <http://purl.org/np/RAfE73MeNzkRIq8thrVTIYwh8k0Ia0liajjv4KhnLxMks#DDI-L_3.3> .
+
+}
+
+:provenance {
+  :assertion dct:creator orcid:0000-0002-1261-9930 .
+}
+
+:pubinfo {
+  : dct:created "2023-07-04T10:59:18Z"^^xsd:dateTime ;
+    dct:creator <https://fip-wizard.ds-wizard.org> ;
+    prov:wasDerivedFrom <https://w3id.org/fip/wizard/7e6c3e0d-ab35-4433-aea7-37c44167441b> ;
+    dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
+}
+
+
+# Declaration FIP-Question-R1.2-MD ----------------------------------------------
+@prefix : <http://purl.org/nanopub/temp/fip-declaration-np/7e6c3e0d-ab35-4433-aea7-37c44167441b/ba288486-9316-4008-9849-aefc96f808f7/7c36cf87-c793-406e-8036-887b645d5ef6#> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix dcat: <https://www.w3.org/ns/dcat#> .
+@prefix fip: <https://w3id.org/fair/fip/terms/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+:Head {
+  : a np:Nanopublication ;
+    np:hasAssertion :assertion ;
+    np:hasProvenance :provenance ;
+    np:hasPublicationInfo :pubinfo .
+}
+
+:assertion {
+  :declaration a fip:FIP-Declaration .
+  :declaration fip:refers-to-question fip:FIP-Question-R1.2-MD .
+  :declaration fip:declared-by <http://purl.org/np/RAykrMeYjXsZsZx-pX4kOVdxxUbm7Ohz4fCk89dsHL_2o#ESS> .
+  :declaration fip:considerations "ESS Policy" .
+  :declaration dcat:startDate "2022-06-01"^^xsd:date .
+  :declaration dcat:endDate "2050-12-31"^^xsd:date .
+  
+  :declaration fip:declares-current-use-of <http://purl.org/np/RAS14Aks7x2b1Z2yFUXa4Av5FAv4SngQ0TY6cZn_ftHzg#DDI-CDI> .
+
+}
+
+:provenance {
+  :assertion dct:creator orcid:0000-0002-1261-9930 .
+}
+
+:pubinfo {
+  : dct:created "2023-07-04T10:59:18Z"^^xsd:dateTime ;
+    dct:creator <https://fip-wizard.ds-wizard.org> ;
+    prov:wasDerivedFrom <https://w3id.org/fip/wizard/7e6c3e0d-ab35-4433-aea7-37c44167441b> ;
+    dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
+}
+
+
+# Declaration FIP-Question-R1.2-D ----------------------------------------------
+@prefix : <http://purl.org/nanopub/temp/fip-declaration-np/7e6c3e0d-ab35-4433-aea7-37c44167441b/ba288486-9316-4008-9849-aefc96f808f7/1baea95c-b8a6-465c-a79a-339b834978b3#> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix dcat: <https://www.w3.org/ns/dcat#> .
+@prefix fip: <https://w3id.org/fair/fip/terms/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+:Head {
+  : a np:Nanopublication ;
+    np:hasAssertion :assertion ;
+    np:hasProvenance :provenance ;
+    np:hasPublicationInfo :pubinfo .
+}
+
+:assertion {
+  :declaration a fip:FIP-Declaration .
+  :declaration fip:refers-to-question fip:FIP-Question-R1.2-D .
+  :declaration fip:declared-by <http://purl.org/np/RAykrMeYjXsZsZx-pX4kOVdxxUbm7Ohz4fCk89dsHL_2o#ESS> .
+  :declaration fip:considerations "ESS Policy" .
+  :declaration dcat:startDate "2022-06-01"^^xsd:date .
+  :declaration dcat:endDate "2050-12-31"^^xsd:date .
+  
+  :declaration fip:declares-current-use-of <http://purl.org/np/RA31wDwIAlgw1f9EXCLzqUNyY-MSMHIJ3VE-SMb4zIRQA#DDI-Codebook> .
+
+}
+
+:provenance {
+  :assertion dct:creator orcid:0000-0002-1261-9930 .
+}
+
+:pubinfo {
+  : dct:created "2023-07-04T10:59:18Z"^^xsd:dateTime ;
+    dct:creator <https://fip-wizard.ds-wizard.org> ;
+    prov:wasDerivedFrom <https://w3id.org/fip/wizard/7e6c3e0d-ab35-4433-aea7-37c44167441b> ;
+    dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
+}
+
+
+# Declaration FIP-Question-R1.2-D ----------------------------------------------
+@prefix : <http://purl.org/nanopub/temp/fip-declaration-np/7e6c3e0d-ab35-4433-aea7-37c44167441b/ba288486-9316-4008-9849-aefc96f808f7/c3eb45c3-eec6-4739-aa81-4b58e382d52d#> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix dcat: <https://www.w3.org/ns/dcat#> .
+@prefix fip: <https://w3id.org/fair/fip/terms/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+:Head {
+  : a np:Nanopublication ;
+    np:hasAssertion :assertion ;
+    np:hasProvenance :provenance ;
+    np:hasPublicationInfo :pubinfo .
+}
+
+:assertion {
+  :declaration a fip:FIP-Declaration .
+  :declaration fip:refers-to-question fip:FIP-Question-R1.2-D .
+  :declaration fip:declared-by <http://purl.org/np/RAykrMeYjXsZsZx-pX4kOVdxxUbm7Ohz4fCk89dsHL_2o#ESS> .
+  :declaration fip:considerations "ESS Policy" .
+  :declaration dcat:startDate "2022-06-01"^^xsd:date .
+  :declaration dcat:endDate "2050-12-31"^^xsd:date .
+  
+  :declaration fip:declares-current-use-of <http://purl.org/np/RAfE73MeNzkRIq8thrVTIYwh8k0Ia0liajjv4KhnLxMks#DDI-L_3.3> .
+
+}
+
+:provenance {
+  :assertion dct:creator orcid:0000-0002-1261-9930 .
+}
+
+:pubinfo {
+  : dct:created "2023-07-04T10:59:18Z"^^xsd:dateTime ;
+    dct:creator <https://fip-wizard.ds-wizard.org> ;
+    prov:wasDerivedFrom <https://w3id.org/fip/wizard/7e6c3e0d-ab35-4433-aea7-37c44167441b> ;
+    dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
+}
+
+
+# Declaration FIP-Question-R1.2-D ----------------------------------------------
+@prefix : <http://purl.org/nanopub/temp/fip-declaration-np/7e6c3e0d-ab35-4433-aea7-37c44167441b/ba288486-9316-4008-9849-aefc96f808f7/0451bae0-b55c-46d4-9df5-7c92f52ab4d6#> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix dcat: <https://www.w3.org/ns/dcat#> .
+@prefix fip: <https://w3id.org/fair/fip/terms/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+:Head {
+  : a np:Nanopublication ;
+    np:hasAssertion :assertion ;
+    np:hasProvenance :provenance ;
+    np:hasPublicationInfo :pubinfo .
+}
+
+:assertion {
+  :declaration a fip:FIP-Declaration .
+  :declaration fip:refers-to-question fip:FIP-Question-R1.2-D .
+  :declaration fip:declared-by <http://purl.org/np/RAykrMeYjXsZsZx-pX4kOVdxxUbm7Ohz4fCk89dsHL_2o#ESS> .
+  :declaration fip:considerations "ESS Policy" .
+  :declaration dcat:startDate "2022-06-01"^^xsd:date .
+  :declaration dcat:endDate "2050-12-31"^^xsd:date .
+  
+  :declaration fip:declares-current-use-of <http://purl.org/np/RAS14Aks7x2b1Z2yFUXa4Av5FAv4SngQ0TY6cZn_ftHzg#DDI-CDI> .
+
+}
+
+:provenance {
+  :assertion dct:creator orcid:0000-0002-1261-9930 .
+}
+
+:pubinfo {
+  : dct:created "2023-07-04T10:59:18Z"^^xsd:dateTime ;
+    dct:creator <https://fip-wizard.ds-wizard.org> ;
+    prov:wasDerivedFrom <https://w3id.org/fip/wizard/7e6c3e0d-ab35-4433-aea7-37c44167441b> ;
+    dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
+}
+
+
+# FIP Nanopub Index ---------------------------------------------------
+@prefix : <http://purl.org/nanopub/temp/fip-declaration-np/7e6c3e0d-ab35-4433-aea7-37c44167441b/ba288486-9316-4008-9849-aefc96f808f7/index#> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix orcid: <https://orcid.org/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+
+:Head {
+  : a np:Nanopublication ;
+    np:hasAssertion :assertion ;
+    np:hasProvenance :provenance ;
+    np:hasPublicationInfo :pubinfo .
+}
+
+:assertion {
+  : npx:includesElement
+      <http://purl.org/nanopub/temp/fip-declaration-np/7e6c3e0d-ab35-4433-aea7-37c44167441b/ba288486-9316-4008-9849-aefc96f808f7/8b26ff47-97f2-4576-917c-9457eb706a40#> ,
+      <http://purl.org/nanopub/temp/fip-declaration-np/7e6c3e0d-ab35-4433-aea7-37c44167441b/ba288486-9316-4008-9849-aefc96f808f7/9711fe32-35c3-4230-8d86-22a8aa9b6070#> ,
+      <http://purl.org/nanopub/temp/fip-declaration-np/7e6c3e0d-ab35-4433-aea7-37c44167441b/ba288486-9316-4008-9849-aefc96f808f7/08967e1c-f551-4cfb-ba40-338b3cf7fc52#> ,
+      <http://purl.org/nanopub/temp/fip-declaration-np/7e6c3e0d-ab35-4433-aea7-37c44167441b/ba288486-9316-4008-9849-aefc96f808f7/c5a12be2-2b48-4ddf-9084-5e169e6b060d#> ,
+      <http://purl.org/nanopub/temp/fip-declaration-np/7e6c3e0d-ab35-4433-aea7-37c44167441b/ba288486-9316-4008-9849-aefc96f808f7/c415f9f3-ceec-4936-b5df-d366c9f80726#> ,
+      <http://purl.org/nanopub/temp/fip-declaration-np/7e6c3e0d-ab35-4433-aea7-37c44167441b/ba288486-9316-4008-9849-aefc96f808f7/9c67e537-9d2a-41c4-b99a-ab2ca177b3fd#> ,
+      <http://purl.org/nanopub/temp/fip-declaration-np/7e6c3e0d-ab35-4433-aea7-37c44167441b/ba288486-9316-4008-9849-aefc96f808f7/eae69894-7756-494e-b16a-18e955f4f664#> ,
+      <http://purl.org/nanopub/temp/fip-declaration-np/7e6c3e0d-ab35-4433-aea7-37c44167441b/ba288486-9316-4008-9849-aefc96f808f7/1355530a-0f61-448d-be54-da6421eeb458#> ,
+      <http://purl.org/nanopub/temp/fip-declaration-np/7e6c3e0d-ab35-4433-aea7-37c44167441b/ba288486-9316-4008-9849-aefc96f808f7/3c6883f9-1815-4d9b-9e7d-4acca2d1bc30#> ,
+      <http://purl.org/nanopub/temp/fip-declaration-np/7e6c3e0d-ab35-4433-aea7-37c44167441b/ba288486-9316-4008-9849-aefc96f808f7/427d220b-9726-407d-a416-7ba31e052549#> ,
+      <http://purl.org/nanopub/temp/fip-declaration-np/7e6c3e0d-ab35-4433-aea7-37c44167441b/ba288486-9316-4008-9849-aefc96f808f7/0d59c45b-a370-4352-a6b0-24f532b6f518#> ,
+      <http://purl.org/nanopub/temp/fip-declaration-np/7e6c3e0d-ab35-4433-aea7-37c44167441b/ba288486-9316-4008-9849-aefc96f808f7/0fac7a1f-6f66-425c-810d-8b5f16b7e974#> ,
+      <http://purl.org/nanopub/temp/fip-declaration-np/7e6c3e0d-ab35-4433-aea7-37c44167441b/ba288486-9316-4008-9849-aefc96f808f7/2e20e552-71ab-4723-878f-4aa7901bfc27#> ,
+      <http://purl.org/nanopub/temp/fip-declaration-np/7e6c3e0d-ab35-4433-aea7-37c44167441b/ba288486-9316-4008-9849-aefc96f808f7/cb8f6a13-48cc-4972-a840-6fc8691e1b29#> ,
+      <http://purl.org/nanopub/temp/fip-declaration-np/7e6c3e0d-ab35-4433-aea7-37c44167441b/ba288486-9316-4008-9849-aefc96f808f7/01ae850f-b843-470a-93a0-a906e0a60715#> ,
+      <http://purl.org/nanopub/temp/fip-declaration-np/7e6c3e0d-ab35-4433-aea7-37c44167441b/ba288486-9316-4008-9849-aefc96f808f7/5fe01288-d824-45fe-9944-c4c80499c1de#> ,
+      <http://purl.org/nanopub/temp/fip-declaration-np/7e6c3e0d-ab35-4433-aea7-37c44167441b/ba288486-9316-4008-9849-aefc96f808f7/6299d893-ff13-4538-98cf-0c983d82e75a#> ,
+      <http://purl.org/nanopub/temp/fip-declaration-np/7e6c3e0d-ab35-4433-aea7-37c44167441b/ba288486-9316-4008-9849-aefc96f808f7/89df9313-ce5f-4e01-9a7d-64f19c35b98d#> ,
+      <http://purl.org/nanopub/temp/fip-declaration-np/7e6c3e0d-ab35-4433-aea7-37c44167441b/ba288486-9316-4008-9849-aefc96f808f7/8e62a06c-ae3c-420d-accc-90458fb0757d#> ,
+      <http://purl.org/nanopub/temp/fip-declaration-np/7e6c3e0d-ab35-4433-aea7-37c44167441b/ba288486-9316-4008-9849-aefc96f808f7/e473289e-77e6-4b44-9bfc-d98d81fa82fa#> ,
+      <http://purl.org/nanopub/temp/fip-declaration-np/7e6c3e0d-ab35-4433-aea7-37c44167441b/ba288486-9316-4008-9849-aefc96f808f7/3d8e9aa0-e180-4552-9212-89526bf567f8#> ,
+      <http://purl.org/nanopub/temp/fip-declaration-np/7e6c3e0d-ab35-4433-aea7-37c44167441b/ba288486-9316-4008-9849-aefc96f808f7/423e5793-c1ad-4f41-ae34-a4dba739c695#> ,
+      <http://purl.org/nanopub/temp/fip-declaration-np/7e6c3e0d-ab35-4433-aea7-37c44167441b/ba288486-9316-4008-9849-aefc96f808f7/ca27e09a-ad00-4329-9141-84ed5765597a#> ,
+      <http://purl.org/nanopub/temp/fip-declaration-np/7e6c3e0d-ab35-4433-aea7-37c44167441b/ba288486-9316-4008-9849-aefc96f808f7/c792d07b-46dd-45e0-b187-ad5e26937b4c#> ,
+      <http://purl.org/nanopub/temp/fip-declaration-np/7e6c3e0d-ab35-4433-aea7-37c44167441b/ba288486-9316-4008-9849-aefc96f808f7/68b1591c-7a80-4b8d-b66e-36d89a906027#> ,
+      <http://purl.org/nanopub/temp/fip-declaration-np/7e6c3e0d-ab35-4433-aea7-37c44167441b/ba288486-9316-4008-9849-aefc96f808f7/6cfb2013-422e-4ef3-bea0-cbe0c6d18a52#> ,
+      <http://purl.org/nanopub/temp/fip-declaration-np/7e6c3e0d-ab35-4433-aea7-37c44167441b/ba288486-9316-4008-9849-aefc96f808f7/8d599172-58a5-42a2-8adc-4e2a9206be66#> ,
+      <http://purl.org/nanopub/temp/fip-declaration-np/7e6c3e0d-ab35-4433-aea7-37c44167441b/ba288486-9316-4008-9849-aefc96f808f7/ea273ee9-5f0d-43c7-bf23-35d76a0da9fd#> ,
+      <http://purl.org/nanopub/temp/fip-declaration-np/7e6c3e0d-ab35-4433-aea7-37c44167441b/ba288486-9316-4008-9849-aefc96f808f7/fe1ccf40-64ac-4aea-98e3-9cb011a6098c#> ,
+      <http://purl.org/nanopub/temp/fip-declaration-np/7e6c3e0d-ab35-4433-aea7-37c44167441b/ba288486-9316-4008-9849-aefc96f808f7/9f994c1b-ca41-43dc-ad4a-7f0703e26bdb#> ,
+      <http://purl.org/nanopub/temp/fip-declaration-np/7e6c3e0d-ab35-4433-aea7-37c44167441b/ba288486-9316-4008-9849-aefc96f808f7/5b026e62-70ef-46f0-bb38-9147a9d42c6a#> ,
+      <http://purl.org/nanopub/temp/fip-declaration-np/7e6c3e0d-ab35-4433-aea7-37c44167441b/ba288486-9316-4008-9849-aefc96f808f7/4b50525e-da58-41af-a5e9-897afea94ba9#> ,
+      <http://purl.org/nanopub/temp/fip-declaration-np/7e6c3e0d-ab35-4433-aea7-37c44167441b/ba288486-9316-4008-9849-aefc96f808f7/867b75fc-06e9-4934-afbd-1743fe9091a3#> ,
+      <http://purl.org/nanopub/temp/fip-declaration-np/7e6c3e0d-ab35-4433-aea7-37c44167441b/ba288486-9316-4008-9849-aefc96f808f7/856a68c4-939d-452d-8b85-f2602d61a0fb#> ,
+      <http://purl.org/nanopub/temp/fip-declaration-np/7e6c3e0d-ab35-4433-aea7-37c44167441b/ba288486-9316-4008-9849-aefc96f808f7/a2850b97-8010-4d85-b361-646d96e407cf#> ,
+      <http://purl.org/nanopub/temp/fip-declaration-np/7e6c3e0d-ab35-4433-aea7-37c44167441b/ba288486-9316-4008-9849-aefc96f808f7/7c36cf87-c793-406e-8036-887b645d5ef6#> ,
+      <http://purl.org/nanopub/temp/fip-declaration-np/7e6c3e0d-ab35-4433-aea7-37c44167441b/ba288486-9316-4008-9849-aefc96f808f7/1baea95c-b8a6-465c-a79a-339b834978b3#> ,
+      <http://purl.org/nanopub/temp/fip-declaration-np/7e6c3e0d-ab35-4433-aea7-37c44167441b/ba288486-9316-4008-9849-aefc96f808f7/c3eb45c3-eec6-4739-aa81-4b58e382d52d#> ,
+      <http://purl.org/nanopub/temp/fip-declaration-np/7e6c3e0d-ab35-4433-aea7-37c44167441b/ba288486-9316-4008-9849-aefc96f808f7/0451bae0-b55c-46d4-9df5-7c92f52ab4d6#> .  
+}
+
+:provenance {
+  :assertion a npx:IndexAssertion .
+  :assertion dct:creator orcid:0000-0002-1261-9930 .
+}
+
+:pubinfo {
+  : a npx:NanopubIndex ;
+    <http://purl.org/dc/elements/1.1/title> "European Social Survey (ESS)" ;
+    dct:created "2023-07-04T10:59:18Z"^^xsd:dateTime ;
+    dct:creator <https://fip-wizard.ds-wizard.org> ;
+    prov:wasDerivedFrom <https://w3id.org/fip/wizard/7e6c3e0d-ab35-4433-aea7-37c44167441b> ;
+    dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
+}

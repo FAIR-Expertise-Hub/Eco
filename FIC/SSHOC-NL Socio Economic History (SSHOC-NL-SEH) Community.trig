@@ -1,0 +1,51 @@
+@prefix : <http://purl.org/nanopub/temp/fair-community/88e92641-ea95-4b8b-bfca-4c3934993a51/9b5522f3-c5d9-4ed5-9957-3fccaec21bc1#> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix fip: <https://w3id.org/fair/fip/terms/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+
+
+:Head {
+  : a np:Nanopublication ;
+    np:hasAssertion :assertion ;
+    np:hasProvenance :provenance ;
+    np:hasPublicationInfo :pubinfo .
+}
+
+:assertion {
+  # identifier: SSHOC-NL-SEH
+  # name: SSHOC-NL Socio Economic History
+  # orcid: 0000-0002-1261-9930
+
+  :SSHOC-NL-SEH a fip:FAIR-Implementation-Community .
+  :SSHOC-NL-SEH rdfs:label "SSHOC-NL Socio Economic History" .
+  :SSHOC-NL-SEH rdfs:comment "The SSHOC-NL Socio Economic History (SEH) community consists of researchers in the Netherlands who conduct research and publish data about social history and economic history research. The community is led by researchers in the International Institute of Social History (IISG), as well as researchers in the Utrecht University, the Vrije Universiteit Amsterdam, RU Nijmegen, etc. The community is also actively involved in Dutch research infrastructures such as CLARIAH and ODISSEI (and their joint large infrastructure project starting in 2024, SSHOC-NL). As the name suggests, the SEH community spans different disciplines from the SSH, as it combines interests and expertise on history and historical data sources with the one on socio-economic aspects such as social inequalities and occupational dynamics." .
+  :SSHOC-NL-SEH rdfs:seeAlso <https://iisg.amsterdam/en> .
+  :SSHOC-NL-SEH fip:has-research-domain <http://www.fairsharing.org/ontology/subject/SRAO_0000062> .
+  # Other research domains
+  :SSHOC-NL-SEH fip:has-research-domain <http://www.fairsharing.org/ontology/subject/SRAO_0000013> .
+  :SSHOC-NL-SEH fip:has-research-domain <http://aims.fao.org/aos/agrovoc/c_2481> .
+  :SSHOC-NL-SEH fip:has-research-domain <http://purl.obolibrary.org/obo/NCIT_C54625> .
+
+}
+
+:provenance {
+  :assertion dct:creator orcid:0000-0002-1261-9930 .
+}
+
+:pubinfo {
+  : dct:created "2023-05-10T14:44:39Z"^^xsd:dateTime ;
+    dct:creator <https://fip-wizard.ds-wizard.org> ;
+    prov:wasDerivedFrom <https://w3id.org/fip/wizard/88e92641-ea95-4b8b-bfca-4c3934993a51> ;
+    dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
+  : npx:introduces :SSHOC-NL-SEH .
+}
+
+
+  
