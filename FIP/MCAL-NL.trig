@@ -1,0 +1,49 @@
+@prefix : <http://purl.org/nanopub/temp/fair-community/dc1e0904-4b1f-43f2-a557-3e8e85b8c370/a29112c2-a2f7-4e12-b5bc-f5d3ab183c04#> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix fip: <https://w3id.org/fair/fip/terms/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+
+
+:Head {
+  : a np:Nanopublication ;
+    np:hasAssertion :assertion ;
+    np:hasProvenance :provenance ;
+    np:hasPublicationInfo :pubinfo .
+}
+
+:assertion {
+  # identifier: MCAL-NL
+  # subject: :MCAL-NL
+  # name: MCAL scholars - Media Content Analysis Lab scholars in the Netherlands
+  # orcid: 0000-0002-6978-5278
+
+  :MCAL-NL a fip:FAIR-Implementation-Community .
+  :MCAL-NL rdfs:label "MCAL scholars - Media Content Analysis Lab scholars in the Netherlands" .
+  :MCAL-NL rdfs:comment "Community of Media Content Analysis scholars in the Netherlands" .
+  :MCAL-NL rdfs:seeAlso <https://odissei-data.nl/en/media-content-analysis-lab/> .
+  :MCAL-NL dct:isPartOf <http://purl.org/np/RA1St3Ux-NgbOaSeSJLh2-CRYUv07HeEGBPwjOoi_gWeE#ODISSEI> .
+  :MCAL-NL fip:has-research-domain <http://www.fairsharing.org/ontology/subject/SRAO_0000054> .
+
+}
+
+:provenance {
+  :assertion dct:creator orcid:0000-0002-6978-5278 .
+}
+
+:pubinfo {
+  : dct:created "2023-07-04T11:05:34Z"^^xsd:dateTime ;
+    dct:creator <https://fip-wizard.ds-wizard.org> ;
+    prov:wasDerivedFrom <https://w3id.org/fip/wizard/dc1e0904-4b1f-43f2-a557-3e8e85b8c370> ;
+    dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
+  : npx:introduces :MCAL-NL .
+}
+
+
+  
