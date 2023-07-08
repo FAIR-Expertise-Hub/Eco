@@ -158,7 +158,7 @@ for file_id in dmp_file_ids:
                             #get data steward if exists
                             if answer:
                                 answer_text = (answer.get('text', ''))
-                                graph.add((file_node, fip.has_data_steward, (Literal(remove_html_tags(answer_text)))))
+                                graph.add((file_node, fip.hasDataSteward, (Literal(remove_html_tags(answer_text)))))
 
 
 
