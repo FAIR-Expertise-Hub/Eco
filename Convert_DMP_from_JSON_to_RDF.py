@@ -23,7 +23,9 @@ dmp_ns = Namespace("https://fairdmp.online/dmp/vu/")
 fip = Namespace("https://peta-pico.github.io/FAIR-nanopubs/fip/index-en.html#https://w3id.org/fair/fip/terms/")
 
 # Bind namespaces to prefixes
-
+graph.bind("fip", fip)
+graph.bind("fdo", fdo)
+graph.bind("dmp", dmp_ns)
 
 
 # remove the HTML tags that come from the JSON file
