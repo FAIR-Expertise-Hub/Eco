@@ -52,6 +52,8 @@ g.add((fdo.Section, rdf.type, rdfs.Class))
 g.add((fdo.Section, rdfs.label, rdflib.Literal("Sections")))
 g.add((fdo.TemplateQuestion, rdf.type, rdfs.Class))
 g.add((fdo.TemplateQuestion, rdfs.label, rdflib.Literal("Questions located in a DMP template")))
+g.add((fdo.TemplateSection, rdf.type, rdfs.Class))
+g.add((fdo.TemplateQuestion, rdfs.label, rdflib.Literal("Sections located in a DMP template")))
 g.add((fdo.ComputerScienceDepartment, rdf.type, rdfs.Class))
 g.add((fdo.ComputerScienceDepartment, rdfs.label, rdflib.Literal("Computer Science department at a university")))
 
