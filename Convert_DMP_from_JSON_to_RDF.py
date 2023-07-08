@@ -51,6 +51,7 @@ for file_id in dmp_file_ids:
         if template_title:
             graph.add((file_node, fdo.usesDMPTemplate, Literal(template_title)))
 
+
         # Extract and add data contact information
         data_contact = dmp.get('data_contact')
         if data_contact:
@@ -164,17 +165,17 @@ for file_id in dmp_file_ids:
 
                     #real section index 1-------------------------------------------------------------------------------
                     if section_number == 1:
-                        if question_number in (4,5,6,7,8,9):
+                        if template_title == "1 - VU DMP template 2021 (NWO & ZonMW certified) v1.3" and question_number in (4,5,6,7,8,9):
                             graph.add((question_node, fdo.requiredBy, fdo.VuLegalTeam))
 
                     #real section index 2-------------------------------------------------------------------------------
                     if section_number == 2:
-                        if question_number in (1,2,4,5):
+                        if template_title == "1 - VU DMP template 2021 (NWO & ZonMW certified) v1.3" and question_number in (1,2,4,5):
                             graph.add((question_node, fdo.requiredBy, fdo.VuLegalTeam))
 
                     #real section index 3-------------------------------------------------------------------------------
                     if section_number == 3:
-                        if question_number in (1,3,4,5,7):
+                        if template_title == "1 - VU DMP template 2021 (NWO & ZonMW certified) v1.3" and question_number in (1,3,4,5,7):
                             graph.add((question_node, fdo.requiredBy, fdo.VuLegalTeam))
 
                     #real Section index 4-------------------------------------------------------------------------------
@@ -257,7 +258,7 @@ for file_id in dmp_file_ids:
                             # Duty level+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
                             graph.add((sdo.Researcher, fdo.isResponsibleForDMPQuestion, question_node))
                         #Legal Team
-                        if question_number in (4,5,6,10,11,12):
+                        if template_title == "1 - VU DMP template 2021 (NWO & ZonMW certified) v1.3" and question_number in (4,5,6,10,11,12):
                             graph.add((question_node, fdo.requiredBy, fdo.VuLegalTeam))
 
                     #real Section index 5-------------------------------------------------------------------------------
