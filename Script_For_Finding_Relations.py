@@ -1,14 +1,16 @@
 import re
 from rdflib import Graph, Literal, Namespace, RDF, URIRef, FOAF, SDO, SKOS, DC
+
 fip = Namespace("https://peta-pico.github.io/FAIR-nanopubs/fip/index-en.html#https://w3id.org/fair/fip/terms/")
 fdo = Namespace("https://fairdmp.online/eco-system/")
 
 g = Graph()
+
 def extract_properties(trig_file):
     with open(trig_file, 'r') as file:
         content = file.read()
 
-    # Use regular expression to find the assertions and extract the properties
+    # Use regular expression to find the assertions
     pattern = r':assertion\s*{(.*?)\s*}'
     assertions = re.findall(pattern, content, flags=re.DOTALL)
 
@@ -37,13 +39,11 @@ def extract_properties(trig_file):
     return properties
 
 # Example usage
-trig_file = 'FIP/CMIP6_data_FIP.trig'  # Replace with your actual trig file name
+trig_file = 'FIP/CMIP6_data_FIP.trig'
 extracted_properties = extract_properties(trig_file)
 
 # Print the extracted properties
 for prop in extracted_properties:
-    g.add((Literal(prop['refers_to_question']), fdo.canHaveAnswer, Literal(prop['declares_current_use_of'])))
-    #print('Refers to question:', prop['refers_to_question'])
-    #print('Declares current use of:', prop['declares_current_use_of'])
-    #print(g9
+    g.add(((fip[(prop['refers_to_question'])]), fdo.canHaveAnswer, URIRef(prop['declares_current_use_of'])))
+
 g.serialize(destination='C:/Users/MSI-NB/PycharmProjects/firstProject/ttl_files/FIP_analysis_converted.ttl', format='turtle')
