@@ -54,8 +54,7 @@ def extract_properties(trig_file):
             declared_by = (str(declared_by_match.group(1)))
 
         # Append properties if both refers-to-question and declares-current-use-of are found in the same assertion
-        if refers_to_question and declares_current_use_of and declared_by:
-            properties.append({
+        if refers_to_question and declares_current_use_of and declared_by:            properties.append({
                 'fip_questions': refers_to_question,
                 'fair_enabling_resources': declares_current_use_of,
                 'community': declared_by
