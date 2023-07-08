@@ -11,7 +11,6 @@ g.bind("fip", fip)
 g.bind("fdo", fdo)
 
 
-
 def extract_fip_pubinfo(trig_file):
     with open(trig_file, 'r') as file:
         content = file.read()
@@ -19,13 +18,13 @@ def extract_fip_pubinfo(trig_file):
     # Use regular expression to find the pubinfo
     pattern_pub = r':pubinfo\s*{(.*?)\s*}'
     pub = re.findall(pattern_pub, content, flags=re.DOTALL)
-
     # Find the FIP URI
     fip_uri = None
     for i in pub:
         fip_uri_match = re.findall(r'prov:wasDerivedFrom\s+<([^>]+)>', i)
         fip_uri = str(set(fip_uri_match))
         return fip_uri
+
 
 def extract_properties(trig_file):
     with open(trig_file, 'r') as file:
@@ -39,6 +38,7 @@ def extract_properties(trig_file):
         # reset the variables
         refers_to_question = None
         declares_current_use_of = None
+        declared_by = None
 
         # Find the refers-to-question property
         refers_to_question_match = re.search(r':declaration\s+fip:refers-to-question\s+fip:(\S+)', assertion)
@@ -48,12 +48,17 @@ def extract_properties(trig_file):
         declares_current_use_of_match = re.search(r':declaration\s+fip:declares-current-use-of\s+<(\S+)>', assertion)
         if declares_current_use_of_match:
             declares_current_use_of = declares_current_use_of_match.group(1)
+        # Find the declares-current-use-of property
+        declared_by_match = re.search(r':declaration\s+fip:declared-by\s+<(\S+)>', assertion)
+        if declared_by_match:
+            declared_by = (str(declared_by_match.group(1)))
 
         # Append properties if both refers-to-question and declares-current-use-of are found in the same assertion
-        if refers_to_question and declares_current_use_of:
+        if refers_to_question and declares_current_use_of and declared_by:
             properties.append({
                 'fip_questions': refers_to_question,
-                'fair_enabling_resources': declares_current_use_of
+                'fair_enabling_resources': declares_current_use_of,
+                'community': declared_by
             })
 
     return properties
@@ -74,7 +79,12 @@ for prop in extracted_properties:
     g.add(((fip[(prop['fip_questions'])]), fdo.canHaveAnswer, URIRef(prop['fair_enabling_resources'])))
     #Add related principle
     thePrinciple = (str(prop['fip_questions']).split('-'))[2]
-    g.add(((fip[(prop['fip_questions'])]), fip["refers-to-question"], fip[thePrinciple]))
+    g.add(((fip[(prop['fip_questions'])]), fip["refers-to-principle"], fip[thePrinciple]))
+    #Add declared by community
+    g.add(((dec[(prop['fip_questions'])]), fip["declared-by"], URIRef(prop['community'])))
+    #Add refers-to-question
+    g.add(((dec[(prop['fip_questions'])]), fip["refers-to-question"], fip[(prop['fip_questions'])]))
+
 
 g.serialize(destination='C:/Users/MSI-NB/PycharmProjects/firstProject/ttl_files/FIP_analysis_converted.ttl',
             format='turtle')
