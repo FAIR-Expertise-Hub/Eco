@@ -59,11 +59,12 @@ for row in results:
     if predicate == URIRef("https://fairdmp.online/eco-system/hasImpactOn"):
         final_analysis.add(str(f"{subject} has impact on section {question_section} question {question_number}: \n"
               f"Explanation: This DMP has DMP template: 1 - VU DMP template 2021 (NWO & ZonMW certified) v1.3, \n"
-              f"{subject} is one of the parties that has an impact on {question_section} question {question_number}."))
+              f"{subject} is one of the parties that has an impact on the DMP template question {question_section}.{question_number}."))
 
     # It could be a reference
     if predicate == URIRef("https://fairdmp.online/eco-system/questionRefersToPrincipal"): #subject becomes the dmp question object becomes the principle
         #print(f"test debug_ {subject},{predicate},{object_value} this is the first cycle")
+        #first object is fair principle
         sparql_query2 = prepareQuery("""
             SELECT ?subject ?predicate ?object
             WHERE {
@@ -73,13 +74,13 @@ for row in results:
         """)
         results2 = graph.query(sparql_query2)
         for i in results2:
-            subject_loop = i['subject']
-            predicate_loop = i['predicate']
-            object_value_loop = i['object']
+            fip_question = i['subject']
+            refers_to_principle = i['predicate']
+            fip_principle = i['object']
             # connect fair to fip object values are the principles
-            if object_value == object_value_loop:
+            if object_value == fip_principle:
                 # subject_loop becomes fip question object_loop becomes the fip principle.
-                #print(f"{subject_loop} between, {predicate_loop} between, {object_value_loop} this is the first loop cycle")
+                # print(f"{subject_loop} between, {predicate_loop} between, {object_value_loop} this is the first loop cycle")
                 sparql_query3 = prepareQuery("""
                     SELECT ?subject ?predicate ?object
                     WHERE {
@@ -89,18 +90,18 @@ for row in results:
                 """)
                 results3 = graph.query(sparql_query3)
                 for j in results3:
-                    subject_loop_2 = j['subject']
-                    predicate_loop_2 = j['predicate']
-                    object_value_loop_2 = j['object']
+                    fip_question = j['subject']
+                    canHaveAnswer = j['predicate']
+                    fer_answer = j['object']
                     # Connect fip question to the respective answer
-                    if object_value_loop_2 == object_value_loop:
+                    if object_value == fip_principle and ((fip_question.split("/")[-1]).split("-")[2]) == (fip_principle.split("/")[-1]):
                         # subject_loop2 becomes question fip:question and object_loop_2 becomes fer
                         # print(f"{subject_loop_2},{predicate_loop_2},{object_value_loop_2} this is the loop 2 cycle")
                         final_analysis.add(str(f"The FIP {dec_URI} could be a reference when the researcher is updating section DMP {question_section} question {question_number}. \n"
-                        f"Explanation: This DMP uses DMP template: 1 - VU DMP template 2021 (NWO & ZonMW certified) v1.3, \n"
-                        f"Question {question_section}.{question_number} of DMP template: 1 - VU DMP template 2021 (NWO & ZonMW certified) v1.3 is about FAIR principle {object_value_loop}.\n"
-                        f"In the FIP the question {subject_loop_2} is about the same FAIR principle."
-                        f"The answer of this question {subject_loop_2} in the FIP is {object_value_loop_2},This answer could be taken into consideration by the researcher."))
+                            f"Explanation: This DMP uses DMP template: 1 - VU DMP template 2021 (NWO & ZonMW certified) v1.3, \n"
+                            f"Question {question_section}.{question_number} of DMP template: 1 - VU DMP template 2021 (NWO & ZonMW certified) v1.3 is about FAIR principle {fip_principle}.\n"
+                            f"In the FIP the question {fip_question} is about the same FAIR principle."
+                            f"The answer of this question {fip_question} in the FIP is {fer_answer},This answer could be taken into consideration by the researcher."))
 
 
 for element in set(final_analysis):
