@@ -63,7 +63,7 @@ for row in results:
 
     # It could be a reference
     if predicate == URIRef("https://fairdmp.online/eco-system/questionRefersToPrincipal"): #subject becomes the dmp question object becomes the principle
-        print(f"test debug_ {subject},{predicate},{object_value} this is the first cycle")
+        #print(f"test debug_ {subject},{predicate},{object_value} this is the first cycle")
         sparql_query2 = prepareQuery("""
             SELECT ?subject ?predicate ?object
             WHERE {
@@ -79,7 +79,7 @@ for row in results:
             # connect fair to fip object values are the principles
             if object_value == object_value_loop:
                 # subject_loop becomes fip question object_loop becomes the fip principle.
-                print(f"{subject_loop} between, {predicate_loop} between, {object_value_loop} this is the first loop cycle")
+                #print(f"{subject_loop} between, {predicate_loop} between, {object_value_loop} this is the first loop cycle")
                 sparql_query3 = prepareQuery("""
                     SELECT ?subject ?predicate ?object
                     WHERE {
@@ -94,16 +94,16 @@ for row in results:
                     object_value_loop_2 = j['object']
                     # Connect fip question to the respective answer
                     # subject_loop2 becomes question fip:question and object_loop_2 becomes fer
-                    print(f"{subject_loop_2},{predicate_loop_2},{object_value_loop_2} this is the loop 2 cycle")
+                    #print(f"{subject_loop_2},{predicate_loop_2},{object_value_loop_2} this is the loop 2 cycle")
                     final_analysis.add(str(f"The FIP {dec_URI} could be a reference when the researcher is updating section DMP {question_section} question {question_number}. \n"
                     f"Explanation: This DMP uses DMP template: 1 - VU DMP template 2021 (NWO & ZonMW certified) v1.3, \n"
                     f"Question {question_section}.{question_number} of DMP template: 1 - VU DMP template 2021 (NWO & ZonMW certified) v1.3 is about FAIR principle {object_value_loop}.\n"
                     f"In the FIP the question {subject_loop_2} is about the same FAIR principle."
-                    f"The answer of this question Q2.1 in the FIP is {object_value_loop_2}, This answer could be taken into consideration by the researcher."))
+                    f"The answer of this question {subject_loop_2} in the FIP is {object_value_loop_2},This answer could be taken into consideration by the researcher."))
 
 
-
-print(f"{final_analysis}")
+for element in set(final_analysis):
+    print("•",element)
 def sparql_results_to_df(results: SPARQLResult) -> DataFrame:
     """
     Export results from an rdflib SPARQL query into a `pandas.DataFrame`,
