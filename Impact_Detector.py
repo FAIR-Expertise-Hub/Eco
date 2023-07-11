@@ -58,8 +58,8 @@ for row in results:
     # If it uses a template by RDM team
     if predicate == URIRef("https://fairdmp.online/eco-system/hasImpactOn"):
         final_analysis.add(str(f"{subject} has impact on section {question_section} question {question_number}: \n"
-              f"    Explanation: This DMP has DMP template: 1 - VU DMP template 2021 (NWO & ZonMW certified) v1.3, \n"
-              f"        {subject} is one of the parties that has an impact on the DMP template question {question_section}.{question_number}."))
+                                f"          Explanation: This DMP has DMP template: 1 - VU DMP template 2021 (NWO & ZonMW certified) v1.3, \n"
+                                    f"              {subject} is one of the parties that has an impact on the DMP template question {question_section}.{question_number}."))
 
     # It could be a reference
     if predicate == URIRef("https://fairdmp.online/eco-system/questionRefersToPrincipal"): #subject becomes the dmp question object becomes the principle
@@ -97,7 +97,7 @@ for row in results:
                     if object_value == fip_principle and ((fip_question.split("/")[-1]).split("-")[2]) == (fip_principle.split("/")[-1]):
                         # subject_loop2 becomes question fip:question and object_loop_2 becomes fer
                         # print(f"{subject_loop_2},{predicate_loop_2},{object_value_loop_2} this is the loop 2 cycle")
-                        final_analysis.add(str(f"The FIP {dec_URI} could be a reference when the researcher is updating section DMP {question_section} question {question_number}. \n"
+                        final_analysis.add(str( f"The FIP {dec_URI} could be a reference when the researcher is updating section DMP {question_section} question {question_number}. \n"
                                                 f"  Explanation: This DMP uses DMP template: 1 - VU DMP template 2021 (NWO & ZonMW certified) v1.3, \n"
                                                 f"      Question {question_section}.{question_number} of DMP template: 1 - VU DMP template 2021 (NWO & ZonMW certified) v1.3 is about FAIR principle {fip_principle}.\n"
                                                 f"          In the FIP the question {fip_question} is about the same FAIR principle."
