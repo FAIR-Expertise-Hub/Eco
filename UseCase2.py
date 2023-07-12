@@ -118,15 +118,8 @@ for row in results:
 
 
 
-
-
-
-
-
-
-graph.serialize(destination='C:/Users/MSI-NB/PycharmProjects/firstProject/ttl_files/EcoSystem_Graph.ttl',
+graph.serialize(destination='C:/Users/MSI-NB/PycharmProjects/firstProject/ScriptsForKG/EcoSystem_Graph.ttl',
             format='turtle')
-
 
 
 for element in set(final_analysis):
@@ -140,4 +133,3 @@ def sparql_results_to_df(results: SPARQLResult) -> DataFrame:
         data=([None if x is None else x.toPython() for x in row] for row in results),
         columns=[str(x) for x in results.vars],
     )
-
