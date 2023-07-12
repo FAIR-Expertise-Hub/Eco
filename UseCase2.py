@@ -1,4 +1,4 @@
-from rdflib import Graph, URIRef
+from rdflib import Graph, URIRef,Namespace
 from rdflib.plugins.sparql.processor import SPARQLResult
 from pandas import DataFrame
 from rdflib.plugins.sparql import prepareQuery
@@ -6,6 +6,8 @@ from rdflib.plugins.sparql import prepareQuery
 
 # Create a Graph object
 graph = Graph()
+fdo = Namespace("https://fairdmp.online/eco-system/")
+fip = Namespace("https://peta-pico.github.io/FAIR-nanopubs/fip/index-en.html#https://w3id.org/fair/fip/terms/")
 
 # Import and parse the first TTL file
 file_path1 = "ttl_files/DMP112581_converted.ttl"
@@ -23,18 +25,57 @@ graph.parse(file_path3, format="turtle")
 file_path4 = "ttl_files/General_Instances.ttl"
 graph.parse(file_path4, format="turtle")
 
-
-
-#Create the big graph
-#graph.serialize(destination='C:/Users/MSI-NB/PycharmProjects/firstProject/ttl_files/NotWorking.ttl',
-            #format='turtle')
-
 # extract the namespaces
 dec_namespace = graph.namespace_manager.store.namespace("dec")
 dec_URI = dec_namespace
 final_analysis = set()
 
-#Get Input question number and section
+
+# Get the community and add the impact of it on questions
+community = set()
+com_query = prepareQuery("""
+    SELECT ?subject ?predicate ?object
+    WHERE {
+        ?subject ?predicate ?object .
+        FILTER (?predicate = <https://peta-pico.github.io/FAIR-nanopubs/fip/index-en.html#https://w3id.org/fair/fip/terms/declared-by>)
+    }
+""")
+resultscom = graph.query(com_query)
+for row in resultscom:
+    object_ = row["object"]
+    community.add(object_)
+
+# Get questions
+all_questions = set()
+community_name = community.pop()
+question_query = prepareQuery("""
+    SELECT ?subject ?predicate ?object
+    WHERE {
+        ?subject ?predicate ?object .
+        FILTER (?object = <https://fairdmp.online/eco-system/DataManagementPlanQuestion>)
+    }
+""")
+results22 = graph.query(question_query)
+for row in results22:
+    question = row["subject"]
+    all_questions.add(question)
+#Add impact relation for community on question
+for question in all_questions:
+    if 'section/5' in str(question):
+        graph.add((URIRef(community_name),fdo.hasImpactOn,URIRef(question)))
+    if 'section/4/question/8' in str(question):
+        graph.add((URIRef(community_name),fdo.hasImpactOn,URIRef(question)))
+    if 'section/4/question/9' in str(question):
+        graph.add((URIRef(community_name),fdo.hasImpactOn,URIRef(question)))
+    if 'section/4/question/3' in str(question):
+        graph.add((URIRef(community_name),fdo.hasImpactOn,URIRef(question)))
+    if 'section/0/question/4' in str(question):
+        graph.add((URIRef(community_name),fdo.hasImpactOn,URIRef(question)))
+    if 'section/0/question/5' in str(question):
+        graph.add((URIRef(community_name),fdo.hasImpactOn,URIRef(question)))
+
+
+# Get Input question number and section
 print("Please enter the question number you would like to inspect. (ex. 1.1, 0.4, 4.2)")
 input_question = input()
 section_and_number = input_question.split(".")
@@ -45,7 +86,7 @@ question_number = section_and_number[1]
 question_node =("https://fairdmp.online/dmp/vu/112581/section/"+question_section+"/question/"+question_number)
 print(question_node)
 # SPARQL query to retrieve all entries related to the class
-sparql_query = """
+sparql_query =  """
 SELECT ?subject ?predicate ?object
 WHERE {
   ?subject ?predicate ?object .
@@ -115,6 +156,8 @@ for row in results:
                                                 f"      Question {question_section}.{question_number} of DMP template: 1 - VU DMP template 2021 (NWO & ZonMW certified) v1.3 is about FAIR principle {fip_principle}.\n"
                                                 f"          In the FIP the question {fip_question} is about the same FAIR principle."
                                                 f"              The answer of this question {fip_question} in the FIP is {fer_answer},This answer could be taken into consideration by the researcher."))
+
+
 
 
 
