@@ -15,14 +15,16 @@ graph.parse(file_path1, format="turtle")
 file_path2 = "ttl_files/FIP_analysis_converted.ttl"
 graph.parse(file_path2, format="turtle")
 #Create the big graph
-graph.serialize(destination='C:/Users/MSI-NB/PycharmProjects/firstProject/ttl_files/NotWorking.ttl',
-            format='turtle')
+#graph.serialize(destination='C:/Users/MSI-NB/PycharmProjects/firstProject/ttl_files/NotWorking.ttl',
+            #format='turtle')
+
 # extract the namespaces
 dec_namespace = graph.namespace_manager.store.namespace("dec")
 dec_URI = dec_namespace
 final_analysis = set()
 
-print("Please enter the question number would like to inspect. (ex. 1.1,2,4.2)")
+#Get Input question number and section
+print("Please enter the question number you would like to inspect. (ex. 1.1, 0.4, 4.2)")
 input_question = input()
 section_and_number = input_question.split(".")
 question_section = section_and_number[0]

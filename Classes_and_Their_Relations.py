@@ -66,6 +66,10 @@ g.add((fdo.ComputerScienceDepartment, rdfs.label, rdflib.Literal("Computer Scien
 
 
 
+g.serialize(destination='C:/Users/MSI-NB/PycharmProjects/firstProject/ttl_files/Classes.ttl',
+            format='turtle')
+
+
 
 
 #classes and their types

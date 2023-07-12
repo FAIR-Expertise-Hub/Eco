@@ -25,7 +25,7 @@ g = rdflib.Graph()
 #DMP quesitons of type Questions
 
 
-g.add((fdo.VrijeUniversiteitAmsterdam, RDF.type, SDO.CollegeorUniversity))
+g.add((fdo.VrijeUniversiteitAmsterdam, RDF.type, SDO.CollegeOrUniversity))
 g.add((fdo.TemplateQuestions, rdf.type, rdfs.DataManagementPlanQuestion))
 g.add((fdo.DataManagementPlanQuestion, RDF.type, SDO.Question))
 g.add((fdo["1 - VU DMP template 2021 (NWO & ZonMW certified) v1.3"], RDF.type, fdo.DataManagementPlanTemplate))
@@ -47,6 +47,7 @@ g.add((fdo.DepartmentResearchDataManagement, rdfs.subClassOf, fdo.RDMSupport))
 #g.add((fdo.DataManagementPlanTemplate, rdf.type, fip["FAIR-Enabling-Resource"]))
 # Not sure about this one.
 g.add((fip["FAIR-Implementation-Community"], rdf.type, fip["FAIR-Enabling-Resource"]))
-
+g.serialize(destination='C:/Users/MSI-NB/PycharmProjects/firstProject/ttl_files/General_Instances.ttl',
+            format='turtle')
 
 
