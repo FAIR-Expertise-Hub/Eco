@@ -1,4 +1,4 @@
-from rdflib import Graph,URIRef
+from rdflib import Graph, URIRef
 from rdflib.plugins.sparql.processor import SPARQLResult
 from pandas import DataFrame
 from rdflib.plugins.sparql import prepareQuery
@@ -14,6 +14,17 @@ graph.parse(file_path1, format="turtle")
 # Import and parse the second TTL file
 file_path2 = "ttl_files/FIP_analysis_converted.ttl"
 graph.parse(file_path2, format="turtle")
+
+#Import and parse the third file
+file_path3 = "ttl_files/Classes.ttl"
+graph.parse(file_path3, format="turtle")
+
+#Import and parse the fourth file
+file_path4 = "ttl_files/General_Instances.ttl"
+graph.parse(file_path4, format="turtle")
+
+
+
 #Create the big graph
 #graph.serialize(destination='C:/Users/MSI-NB/PycharmProjects/firstProject/ttl_files/NotWorking.ttl',
             #format='turtle')
@@ -104,6 +115,18 @@ for row in results:
                                                 f"      Question {question_section}.{question_number} of DMP template: 1 - VU DMP template 2021 (NWO & ZonMW certified) v1.3 is about FAIR principle {fip_principle}.\n"
                                                 f"          In the FIP the question {fip_question} is about the same FAIR principle."
                                                 f"              The answer of this question {fip_question} in the FIP is {fer_answer},This answer could be taken into consideration by the researcher."))
+
+
+
+
+
+
+
+
+
+graph.serialize(destination='C:/Users/MSI-NB/PycharmProjects/firstProject/ttl_files/EcoSystem_Graph.ttl',
+            format='turtle')
+
 
 
 for element in set(final_analysis):
