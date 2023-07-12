@@ -53,7 +53,6 @@ g.add((fdo.DepartmentResearchDataManagement, rdfs.subClassOf, fdo.RDMSupport))
 
 
 
-g.add((fip["FAIR-Implementation-Community"], rdf.type, fip["FAIR-Enabling-Resource"]))
 g.serialize(destination='C:/Users/MSI-NB/PycharmProjects/firstProject/ttl_files/General_Instances.ttl',
             format='turtle')
 
