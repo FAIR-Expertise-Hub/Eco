@@ -309,4 +309,4 @@ for file_id in dmp_file_ids:
                             graph.add((question_node, sdo.acceptedAnswer, (Literal(answer_text))))
 
     # Serialize the graph to TTL format
-    graph.serialize(destination='C:/Users/MSI-NB/PycharmProjects/firstProject/ttl_files/DMP1_converted.ttl', format='turtle')
+    graph.serialize(destination='C:/Users/MSI-NB/PycharmProjects/firstProject/ttl_files/DMP'+str(file_id)+'_converted.ttl', format='turtle')
