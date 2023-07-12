@@ -19,7 +19,7 @@ graph = Graph()
 
 # Define namespaces
 fdo = Namespace("https://fairdmp.online/eco-system/")
-dmp_ns = Namespace("https://fairdmp.online/dmp/vu/")
+dmp_ns = Namespace(("https://fairdmp.online/dmp/vu/"+str(dmp_file_ids[0])))
 fip = Namespace("https://peta-pico.github.io/FAIR-nanopubs/fip/index-en.html#https://w3id.org/fair/fip/terms/")
 
 # Bind namespaces to prefixes
@@ -44,7 +44,7 @@ for file_id in dmp_file_ids:
         dmp = data[0][0]
 
         # Extract and add template information
-        file_node = URIRef(dmp_ns + str(file_id))
+        file_node = URIRef(dmp_ns)
         template = dmp['template']
         template_title = template.get('title')
         template_id = template.get('id')
@@ -81,8 +81,8 @@ for file_id in dmp_file_ids:
         sections = plan.get('sections', [])
         for section in sections:
             section_title = remove_html_tags(section.get('title'))
-            section_number = int( section.get('number')-1)
-            section_node = URIRef(dmp_ns + str(file_id) + "/section/" + str(section_number))
+            section_number = int(section.get('number')-1)
+            section_node = URIRef(dmp_ns + "/section/" + str(section_number))
             section_description = remove_html_tags(section.get('description'))
 
             if section_node:
@@ -101,7 +101,7 @@ for file_id in dmp_file_ids:
                     question_text = remove_html_tags(question.get('text'))
                     question_number = question.get('number')
                     answer = question.get('answer')
-                    question_node = URIRef(dmp_ns + str(file_id) + "/section/" + str(section_number) + "/question/" + str(question_number))
+                    question_node = URIRef(dmp_ns + "/section/" + str(section_number) + "/question/" + str(question_number))
 
 
                     #Get the relations to the FAIR Principles
