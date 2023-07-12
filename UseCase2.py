@@ -28,6 +28,12 @@ graph.parse(file_path4, format="turtle")
 # extract the namespaces
 dec_namespace = graph.namespace_manager.store.namespace("dec")
 dec_URI = dec_namespace
+dmp_namespace = graph.namespace_manager.store.namespace("dmp")
+dmp_URI = dmp_namespace
+
+
+
+#Printing relatons from this set
 final_analysis = set()
 
 
@@ -83,7 +89,7 @@ question_section = section_and_number[0]
 question_number = section_and_number[1]
 
 
-question_node =("https://fairdmp.online/dmp/vu/112581/section/"+question_section+"/question/"+question_number)
+question_node =(dmp_URI+"/section/"+question_section+"/question/"+question_number)
 print(question_node)
 # SPARQL query to retrieve all entries related to the class
 sparql_query =  """
