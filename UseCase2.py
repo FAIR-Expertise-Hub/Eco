@@ -8,7 +8,7 @@ from rdflib.plugins.sparql import prepareQuery
 graph = Graph()
 
 # Import and parse the first TTL file
-file_path1 = "ttl_files/DMP1_converted.ttl"
+file_path1 = "ttl_files/DMP112581_converted.ttl"
 graph.parse(file_path1, format="turtle")
 
 # Import and parse the second TTL file
