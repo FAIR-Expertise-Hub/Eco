@@ -82,6 +82,7 @@ for prop in extracted_properties:
     g.add(((fip[(prop['fip_questions'])]), fip["refers-to-principle"], fip[thePrinciple]))
     #Add declared by community
     g.add(((dec[(prop['fip_questions'])]), fip["declared-by"], URIRef(prop['community'])))
+    g.add((URIRef(prop['community']), RDF.type, fip['FAIR-Implementation-Community']))
     #Add refers-to-question
     g.add(((dec[(prop['fip_questions'])]), fip["refers-to-question"], fip[(prop['fip_questions'])]))
 
