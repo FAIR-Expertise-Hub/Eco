@@ -58,13 +58,6 @@ g.add((fdo.ComputerScienceDepartment, rdf.type, rdfs.Class))
 g.add((fdo.ComputerScienceDepartment, rdfs.label, rdflib.Literal("Computer Science department at a university")))
 
 
-#Property Hierarchy
-#rdfs: subClassOf
-#fdo:providesdmptemplate
-#usesdmptemplate
-# ds maintains shuaiDMP
-
-
 
 g.serialize(destination='C:/Users/MSI-NB/PycharmProjects/firstProject/ttl_files/Classes.ttl',
             format='turtle')
