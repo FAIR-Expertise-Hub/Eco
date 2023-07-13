@@ -116,7 +116,7 @@ for row in results:
         final_analysis.add(str(f"{subject} has impact on {object_value}:\n"
               f"    {subject} is responsible for this DMP question."))
     # If it uses a template by RDM team
-    if predicate == URIRef("https://fairdmp.online/eco-system/hasImpactOn"):
+    if predicate == URIRef("https://fairdmp.online/eco-system/hasImpactOn") and ("https://fairdmp.online/dmp/vu/112581/section/") in str(object_value):
         final_analysis.add(str(f"{subject} has impact on section {question_section} question {question_number}: \n"
                                 f"          Explanation: This DMP has DMP template: 1 - VU DMP template 2021 (NWO & ZonMW certified) v1.3, \n"
                                     f"              {subject} is one of the parties that has an impact on the DMP template question {question_section}.{question_number}."))
