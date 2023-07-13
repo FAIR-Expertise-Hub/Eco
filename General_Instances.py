@@ -4,7 +4,7 @@ from rdflib import Literal
 
 
 fdo = rdflib.Namespace("https://fairdmp.online/eco-system/")
-dmp_ns = rdflib.Namespace("https://fairdmp.online/dmp/vu/")
+#dmp_ns = rdflib.Namespace("https://fairdmp.online/dmp/vu/")
 fip = rdflib.Namespace("https://peta-pico.github.io/FAIR-nanopubs/fip/index-en.html#https://w3id.org/fair/fip/terms/")
 sdo = SDO
 rdf = RDF
@@ -15,7 +15,7 @@ g = rdflib.Graph()
 
 g.bind("fip", fip)
 g.bind("fdo", fdo)
-g.bind("dmp", dmp_ns)
+#g.bind("dmp", dmp_ns)
 
 #Instance level
 
