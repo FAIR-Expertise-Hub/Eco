@@ -1,14 +1,12 @@
 #In charge of class level
 import rdflib.namespace
-from rdflib.namespace import CSVW, DC, DCAT, DCTERMS, DOAP, FOAF, ODRL2, ORG, OWL, \
-                           PROF, PROV, RDF, RDFS, SDO, SH, SKOS, SOSA, SSN, TIME, \
-                           VOID, XMLNS, XSD
+from rdflib.namespace import  RDF, RDFS, SDO
 
 fdo = rdflib.Namespace("https://fairdmp.online/eco-system/")
 sdo = SDO
 rdf = RDF
 rdfs = RDFS
-fip = rdflib.Namespace("https://w3id.org/fair/fip/latest/FAIR-Implementation-Community")
+fip = rdflib.Namespace("https://peta-pico.github.io/FAIR-nanopubs/fip/index-en.html#https://w3id.org/fair/fip/terms/")
 
 g = rdflib.Graph()
 
@@ -51,7 +49,7 @@ g.add((fdo.Section, rdfs.label, rdflib.Literal("Sections")))
 g.add((fdo.TemplateQuestion, rdf.type, rdfs.Class))
 g.add((fdo.TemplateQuestion, rdfs.label, rdflib.Literal("Questions located in a DMP template")))
 g.add((fdo.TemplateSection, rdf.type, rdfs.Class))
-g.add((fdo.TemplateQuestion, rdfs.label, rdflib.Literal("Sections located in a DMP template")))
+g.add((fdo.TemplateSection, rdfs.label, rdflib.Literal("Sections located in a DMP template")))
 g.add((sdo.GovernmentOffice, fdo.hasImpactOn, fdo.UniversityLegalTeam))
 g.add((sdo.GovernmentOffice, fdo.hasImpactOn, fdo.RDMPlatform))
 
