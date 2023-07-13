@@ -1,7 +1,5 @@
 import rdflib.namespace
-from rdflib.namespace import CSVW, DC, DCAT, DCTERMS, DOAP, FOAF, ODRL2, ORG, OWL, \
-                           PROF, PROV, RDF, RDFS, SDO, SH, SKOS, SOSA, SSN, TIME, \
-                           VOID, XMLNS, XSD
+from rdflib.namespace import  FOAF, RDF, RDFS, SDO
 from rdflib import Literal
 
 
@@ -45,7 +43,6 @@ g.add((fdo.VuLegalTeam, rdf.type, fdo.UniversityLegalTeam))
 g.add((fdo.DataManagementPlan, RDF.type, fip["FAIR-Enabling-Resource"]))
 g.add((fdo.RDMPlatform, rdf.type, fip["FAIR-Enabling-Resource"]))
 
-#g.add((sdo.Researcher, sdo.department, fdo.ComputerScienceDepartment))
 
 g.add((fdo.UniversityResearchDataManagement, rdfs.subClassOf, fdo.RDMSupport))
 g.add((fdo.FacultyResearchDataManagement, rdfs.subClassOf, fdo.RDMSupport))
