@@ -41,6 +41,9 @@ g.add((fdo.VrijeUniversiteitAmsterdam, fdo.providesDMPTemplate, fdo.VuTemplate17
 g.add((fdo.VuLegalTeam, rdf.type, fdo.UniversityLegalTeam))
 g.add((fdo.DataManagementPlan, RDF.type, fip["FAIR-Enabling-Resource"]))
 g.add((fdo.RDMPlatform, rdf.type, fip["FAIR-Enabling-Resource"]))
+g.add((sdo.GovernmentOffice, fdo.hasImpactOn, fdo.UniversityLegalTeam))
+g.add((sdo.GovernmentOffice, fdo.hasImpactOn, fdo.RDMPlatform))
+
 
 
 
