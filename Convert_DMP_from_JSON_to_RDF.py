@@ -48,8 +48,12 @@ for file_id in dmp_file_ids:
         template = dmp['template']
         template_title = template.get('title')
         template_id = template.get('id')
-        if template_title:
-            graph.add((file_node, fdo.usesDMPTemplate, URIRef(fdo.template_title)))
+        if template_title == "1 - VU DMP template 2021 (NWO & ZonMW certified) v1.3":
+            vu_template = URIRef("https://fairdmp.online/dmp/vu/VU-DMP-template-2021-NWO-ZonMW-certified-v1.3")
+            graph.add((URIRef(file_node), fdo.usesDMPTemplate, vu_template))
+
+        else:
+            graph.add((URIRef(file_node), fdo.usesDMPTemplate, Literal(template_title)))
 
 
         # Extract and add data contact information
@@ -165,17 +169,17 @@ for file_id in dmp_file_ids:
 
                     #real section index 1-------------------------------------------------------------------------------
                     if section_number == 1:
-                        if template_title == "1 - VU DMP template 2021 (NWO & ZonMW certified) v1.3" and question_number in (4,5,6,7,8,9):
+                        if  question_number in (4,5,6,7,8,9):
                             graph.add((question_node, fdo.requiredBy, fdo.VuLegalTeam))
 
                     #real section index 2-------------------------------------------------------------------------------
                     if section_number == 2:
-                        if template_title == "1 - VU DMP template 2021 (NWO & ZonMW certified) v1.3" and question_number in (1,2,4,5):
+                        if question_number in (1,2,4,5):
                             graph.add((question_node, fdo.requiredBy, fdo.VuLegalTeam))
 
                     #real section index 3-------------------------------------------------------------------------------
                     if section_number == 3:
-                        if template_title == "1 - VU DMP template 2021 (NWO & ZonMW certified) v1.3" and question_number in (1,3,4,5,7):
+                        if question_number in (1,3,4,5,7):
                             graph.add((question_node, fdo.requiredBy, fdo.VuLegalTeam))
 
                     #real Section index 4-------------------------------------------------------------------------------
