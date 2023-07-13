@@ -302,7 +302,7 @@ for file_id in dmp_file_ids:
                     if question_number and question_text:
                         graph.add((question_node, rdf.type, fdo.DataManagementPlanQuestion))
                         graph.add((question_node, dc.title, Literal(question_text)))
-                        graph.add((section_node, fdo.consists_of, question_node))
+                        graph.add((section_node, fdo.consistsOf, question_node))
                         # Add answer text if it exists
                         if answer:
                             answer_text = remove_html_tags(answer.get('text', ''))
