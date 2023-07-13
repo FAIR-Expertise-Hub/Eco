@@ -1,6 +1,5 @@
 from rdflib import Graph, URIRef,Namespace
 from rdflib.plugins.sparql.processor import SPARQLResult
-from pandas import DataFrame
 from rdflib.plugins.sparql import prepareQuery
 
 
@@ -173,12 +172,3 @@ graph.serialize(destination='C:/Users/MSI-NB/PycharmProjects/firstProject/Script
 
 for element in set(final_analysis):
     print("•",element)
-def sparql_results_to_df(results: SPARQLResult) -> DataFrame:
-    """
-    Export results from an rdflib SPARQL query into a `pandas.DataFrame`,
-    using Python types. Got from https://github.com/RDFLib/rdflib/issues/1179.
-    """
-    return DataFrame(
-        data=([None if x is None else x.toPython() for x in row] for row in results),
-        columns=[str(x) for x in results.vars],
-    )
