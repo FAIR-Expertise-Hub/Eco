@@ -36,8 +36,6 @@ g.add((fdo.FacultyResearchDataManagement, rdf.type, rdfs.Class))
 g.add((fdo.FacultyResearchDataManagement, rdfs.label, rdflib.Literal("FacultyResearchDataManagement")))
 g.add((fdo.UniversityResearchDataManagement, rdf.type, rdfs.Class))
 g.add((fdo.UniversityResearchDataManagement, rdfs.label, rdflib.Literal("UniversityResearchDataManagement")))
-g.add((fdo.UniversityEthicalTeam, rdf.type, rdfs.Class))
-g.add((fdo.UniversityEthicalTeam, rdfs.label, rdflib.Literal("The ethical team responsible of preparing the ethical policy")))
 g.add((fdo.UniversityLegalTeam, rdf.type, rdfs.Class))
 g.add((fdo.UniversityLegalTeam, rdfs.label, rdflib.Literal("The team responsible of preparing the legal policies for a university")))
 g.add((fdo.DataManagementPlan, rdf.type, rdfs.Class))
@@ -54,8 +52,8 @@ g.add((fdo.TemplateQuestion, rdf.type, rdfs.Class))
 g.add((fdo.TemplateQuestion, rdfs.label, rdflib.Literal("Questions located in a DMP template")))
 g.add((fdo.TemplateSection, rdf.type, rdfs.Class))
 g.add((fdo.TemplateQuestion, rdfs.label, rdflib.Literal("Sections located in a DMP template")))
-g.add((fdo.ComputerScienceDepartment, rdf.type, rdfs.Class))
-g.add((fdo.ComputerScienceDepartment, rdfs.label, rdflib.Literal("Computer Science department at a university")))
+
+
 
 
 
