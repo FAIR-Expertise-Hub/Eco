@@ -25,7 +25,7 @@ fip = Namespace("https://peta-pico.github.io/FAIR-nanopubs/fip/index-en.html#htt
 # Bind namespaces to prefixes
 graph.bind("fip", fip)
 graph.bind("fdo", fdo)
-graph.bind("dmp", dmp_ns)
+graph.bind("dmp_file", dmp_ns)
 
 
 # remove the HTML tags that come from the JSON file
@@ -49,7 +49,7 @@ for file_id in dmp_file_ids:
         template_title = template.get('title')
         template_id = template.get('id')
         if template_title:
-            graph.add((file_node, fdo.usesDMPTemplate, Literal(template_title)))
+            graph.add((file_node, fdo.usesDMPTemplate, URIRef(fdo.template_title)))
 
 
         # Extract and add data contact information
