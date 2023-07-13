@@ -54,4 +54,3 @@ g.add((fdo.DepartmentResearchDataManagement, rdfs.subClassOf, fdo.RDMSupport))
 g.serialize(destination='C:/Users/MSI-NB/PycharmProjects/firstProject/ttl_files/General_Instances.ttl',
             format='turtle')
 
-
