@@ -52,7 +52,8 @@ g.add((fdo.TemplateQuestion, rdf.type, rdfs.Class))
 g.add((fdo.TemplateQuestion, rdfs.label, rdflib.Literal("Questions located in a DMP template")))
 g.add((fdo.TemplateSection, rdf.type, rdfs.Class))
 g.add((fdo.TemplateQuestion, rdfs.label, rdflib.Literal("Sections located in a DMP template")))
-
+g.add((sdo.GovernmentOffice, fdo.hasImpactOn, fdo.UniversityLegalTeam))
+g.add((sdo.GovernmentOffice, fdo.hasImpactOn, fdo.RDMPlatform))
 
 
 
