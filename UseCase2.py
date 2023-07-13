@@ -27,7 +27,7 @@ graph.parse(file_path4, format="turtle")
 # extract the namespaces
 dec_namespace = graph.namespace_manager.store.namespace("dec")
 dec_URI = dec_namespace
-dmp_namespace = graph.namespace_manager.store.namespace("dmp")
+dmp_namespace = graph.namespace_manager.store.namespace("dmp_file")
 dmp_URI = dmp_namespace
 
 
