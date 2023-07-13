@@ -38,6 +38,7 @@ g.add((Literal("1 - VU DMP template 2021 (NWO & ZonMW certified) v1.3"), RDF.typ
 g.add((Literal("1 - VU DMP template 2021 (NWO & ZonMW certified) v1.3"), fdo.consistsOf, fdo.TemplateSection))
 g.add((fdo.TemplateSection, fdo.consistsOf, fdo.TemplateQuestions))
 g.add((fdo.DataSteward, rdf.type, FOAF.Person))
+g.add((fdo.RDMSupport, fdo.consistsOf, fdo.DataSteward))
 g.add((fdo.VrijeUniversiteitAmsterdam, fdo.providesDMPTemplate, fdo.VuTemplate17))
 g.add((fdo.VuLegalTeam, rdf.type, fdo.UniversityLegalTeam))
 g.add((fdo.DataManagementPlan, RDF.type, fip["FAIR-Enabling-Resource"]))
