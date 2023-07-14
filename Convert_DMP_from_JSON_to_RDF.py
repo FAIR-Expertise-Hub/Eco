@@ -59,12 +59,14 @@ for file_id in dmp_file_ids:
         # Extract and add data contact information
         data_contact = dmp.get('data_contact')
         if data_contact:
+            graph.add((file_node, fdo.hasDataContact, sdo.ContactPoint))
             data_contact_name = data_contact.get('name')
             data_contact_email = data_contact.get('email')
+            graph.add((file_node, dc.title, fdo.DataContact))
             if data_contact_name:
-                graph.add((fdo.DataContact, sdo.name, Literal(data_contact_name)))
+                graph.add((sdo.ContactPoint, sdo.name, Literal(data_contact_name)))
             if data_contact_email:
-                graph.add((fdo.DataContact, sdo.email, Literal(data_contact_email)))
+                graph.add((sdo.ContactPoint, sdo.email, Literal(data_contact_email)))
 
         # Extract and add project funder information
         funder = dmp.get('funder')
