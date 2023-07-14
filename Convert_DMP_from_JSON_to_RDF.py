@@ -10,9 +10,9 @@ sdo = SDO
 dc = DC
 # Specify the path to the JSON files
 path_to_files = 'C:/Users/MSI-NB/PycharmProjects/firstProject/JSON DMP Files/'
-dmp_file_ids = [112581]
+dmp_file_ids = [111527]
 #Other files with 1 - VU DMP template 2021 (NWO & ZonMW certified) v1.3"
-#[ 111527, 111548, 111764]
+#[ 111527, 111548, 111764]112581
 
 # Create an RDF graph
 graph = Graph()
