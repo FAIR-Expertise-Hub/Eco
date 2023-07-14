@@ -9,7 +9,7 @@ fdo = Namespace("https://fairdmp.online/eco-system/")
 fip = Namespace("https://peta-pico.github.io/FAIR-nanopubs/fip/index-en.html#https://w3id.org/fair/fip/terms/")
 
 # Import and parse the first TTL file
-file_path1 = "ttl_files/DMP112581_converted.ttl"
+file_path1 = "ttl_files/DMP111527_converted.ttl"
 graph.parse(file_path1, format="turtle")
 
 # Import and parse the second TTL file
@@ -45,6 +45,7 @@ com_query = prepareQuery("""
         FILTER (?predicate = <https://peta-pico.github.io/FAIR-nanopubs/fip/index-en.html#https://w3id.org/fair/fip/terms/declared-by>)
     }
 """)
+
 resultscom = graph.query(com_query)
 for row in resultscom:
     object_ = row["object"]
@@ -110,7 +111,7 @@ for row in results:
         final_analysis.add(str(f"The suggested response for the {subject} is: {object_value}"))
     # If it is required by legal team follow the edges
     if predicate == URIRef("https://fairdmp.online/eco-system/requiredBy") and row['object'] == URIRef("https://fairdmp.online/eco-system/VuLegalTeam"):
-        final_analysis.add(str(f"The university legal team has direct impact on section {question_section} question {question_number}: \n"
+        final_analysis.add(str(f"The university legal team has direct impact on section {question_section}, question {question_number}: \n"
                                f"       Explanation: This DMP has DMP template: 1 - VU DMP template 2021 (NWO & ZonMW certified) v1.3, \n"
                                f"           The University Legal Team is the party that requires section {question_section} question {question_number} to be added to this template."))
     # If it is responsible for DMP question
@@ -119,12 +120,12 @@ for row in results:
                                f"       Explanation: {subject} is responsible for this DMP question."))
     # If it uses a template by RDM team
     if "http://purl.org/" not in str(subject)  and predicate == URIRef("https://fairdmp.online/eco-system/hasImpactOn") and ("https://fairdmp.online/dmp/vu/112581/section/") in str(object_value):
-        final_analysis.add(str(f"{subject} has direct impact on section {question_section} question {question_number}: \n"
+        final_analysis.add(str(f"{subject} has direct impact on section {question_section}, question {question_number}: \n"
                                f"       Explanation: This DMP has DMP template: 1 - VU DMP template 2021 (NWO & ZonMW certified) v1.3, \n"
                                f"              {subject} is one of the parties that has a direct impact on the answer of the DMP template question {question_section}.{question_number}."))
     #add the Community
     if "http://purl.org/" in str(subject)  and predicate == URIRef("https://fairdmp.online/eco-system/hasImpactOn") and ("https://fairdmp.online/dmp/vu/112581/section/") in str(object_value):
-        final_analysis.add(str(f"{subject} has direct impact on section {question_section} question {question_number}: \n"
+        final_analysis.add(str(f"{subject} has direct impact on section {question_section}, question {question_number}: \n"
                                f"       Explanation: This DMP has DMP template: 1 - VU DMP template 2021 (NWO & ZonMW certified) v1.3, \n"
                                f"              {subject} is a community. Community one of the parties that has a direct impact on the answer of the DMP template question {question_section}.{question_number}."))
 
@@ -164,11 +165,11 @@ for row in results:
                     if object_value == fip_principle and ((fip_question.split("/")[-1]).split("-")[2]) == (fip_principle.split("/")[-1]):
                         # subject_loop2 becomes question fip:question and object_loop_2 becomes fer
                         # print(f"{subject_loop_2},{predicate_loop_2},{object_value_loop_2} this is the loop 2 cycle")
-                        final_analysis.add(str( f"The FIP {dec_URI} could be a reference when the researcher is updating section DMP {question_section} question {question_number}. \n"
-                                                f"      Explanation: This DMP uses DMP template: 1 - VU DMP template 2021 (NWO & ZonMW certified) v1.3, \n"
+                        final_analysis.add(str( f"The FIP {dec_URI} could be a reference when the researcher is updating DMP section {question_section}, question {question_number}. \n"
+                                                f"      Explanation: This DMP uses DMP template: 1 - VU DMP template 2021 (NWO & ZonMW certified) v1.3. \n"
                                                 f"          Question {question_section}.{question_number} of this template is about FAIR principle {fip_principle}.\n"
-                                                f"              In the given FIP the question {fip_question} is about the same FAIR principle.\n"
-                                                f"                  The answer of this question {fip_question} in the FIP is {fer_answer}.\n"
+                                                f"              In the given FIP, the question {fip_question} is about the same FAIR principle.\n"
+                                                f"                  The answer to this question in the FIP is {fer_answer}.\n"
                                                 f"                      This answer could be taken into consideration by the researcher."))
 
 
