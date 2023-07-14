@@ -50,9 +50,8 @@ g.add((fdo.TemplateQuestion, rdf.type, rdfs.Class))
 g.add((fdo.TemplateQuestion, rdfs.label, rdflib.Literal("Questions located in a DMP template")))
 g.add((fdo.TemplateSection, rdf.type, rdfs.Class))
 g.add((fdo.TemplateSection, rdfs.label, rdflib.Literal("Sections located in a DMP template")))
-
-
-
+g.add((fdo.DataContact, rdf.type, rdfs.Class))
+g.add((fdo.DataContact, rdfs.label, rdflib.Literal("Person,or department responsible for data")))
 
 
 g.serialize(destination='C:/Users/MSI-NB/PycharmProjects/firstProject/ttl_files/Classes.ttl',
