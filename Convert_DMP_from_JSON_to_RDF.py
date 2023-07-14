@@ -93,6 +93,7 @@ for file_id in dmp_file_ids:
 
             if section_node:
                 graph.add((section_node, rdf.type, fdo.Section))
+                graph.add((section_node, RDFS.label, Literal("Section " + str(section_number) + " of DMP" + str(file_id))))
                 if section_title:
                     graph.add((section_node, dc.title, Literal(section_title)))
                 # Add section number if it exists
@@ -108,7 +109,7 @@ for file_id in dmp_file_ids:
                     question_number = question.get('number')
                     answer = question.get('answer')
                     question_node = URIRef(dmp_ns + "/section/" + str(section_number) + "/question/" + str(question_number))
-
+                    graph.add((question_node, RDFS.label, Literal("Section "+str(section_number)+ " Question "+ str(question_number) + " of DMP" + str(file_id))))
 
                     #Get the relations to the FAIR Principles
                     #real section index 0
