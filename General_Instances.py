@@ -1,5 +1,5 @@
 import rdflib.namespace
-from rdflib.namespace import  FOAF, RDF, RDFS, SDO
+from rdflib.namespace import  FOAF, RDF, RDFS, SDO, URIRef
 from rdflib import Literal
 
 
@@ -26,7 +26,7 @@ g.bind("fdo", fdo)
 #TemplateQuestions hasTitle questionitself.
 #TemplateQuestions of type DMPQuestions
 #DMP quesitons of type Questions
-vu_template = rdflib.URIRef("https://fairdmp.online/dmp/vu/VU-DMP-template-2021-NWO-ZonMW-certified-v1.3")
+vu_template = URIRef("https://fairdmp.online/dmp/vu/VU-DMP-template-2021-NWO-ZonMW-certified-v1.3")
 
 
 g.add((fdo.VrijeUniversiteitAmsterdam, RDF.type, SDO.CollegeOrUniversity))
@@ -37,7 +37,7 @@ g.add((vu_template, fdo.consistsOf, fdo.TemplateSection))
 g.add((fdo.TemplateSection, fdo.consistsOf, fdo.TemplateQuestions))
 g.add((fdo.DataSteward, rdf.type, FOAF.Person))
 g.add((fdo.RDMSupport, fdo.consistsOf, fdo.DataSteward))
-g.add((fdo.VrijeUniversiteitAmsterdam, fdo.providesDMPTemplate, fdo.VuTemplate17))
+g.add((fdo.VrijeUniversiteitAmsterdam, fdo.providesDMPTemplate, vu_template))
 g.add((fdo.VuLegalTeam, rdf.type, fdo.UniversityLegalTeam))
 g.add((fdo.DataManagementPlan, RDF.type, fip["FAIR-Enabling-Resource"]))
 g.add((fdo.RDMPlatform, rdf.type, fip["FAIR-Enabling-Resource"]))
