@@ -1,5 +1,5 @@
 import re
-from rdflib import Graph, Literal, Namespace, RDF, URIRef, FOAF, SDO, SKOS, DC
+from rdflib import Graph, Literal, Namespace, RDF, URIRef, FOAF, SDO, SKOS, DC,RDFS
 
 fip = Namespace("https://peta-pico.github.io/FAIR-nanopubs/fip/index-en.html#https://w3id.org/fair/fip/terms/")
 fdo = Namespace("https://fairdmp.online/eco-system/")
@@ -75,14 +75,17 @@ g.bind("dec", dec)
 for prop in extracted_properties:
     #Add declared FER
     g.add(((dec[(prop['fip_questions'])]), fip['declares-current-use-of'], URIRef(prop['fair_enabling_resources'])))
+    g.add(((dec[(prop['fip_questions'])]), RDFS.label, Literal("A declaration answering a FIP question")))
     #Add possible answer
     g.add(((fip[(prop['fip_questions'])]), fdo.canHaveAnswer, URIRef(prop['fair_enabling_resources'])))
     #Add related principle
     thePrinciple = (str(prop['fip_questions']).split('-'))[2]
     g.add(((fip[(prop['fip_questions'])]), fip["refers-to-principle"], fip[thePrinciple]))
+    g.add(((fip[(prop['fip_questions'])]), RDFS.label, Literal("A FIP question")))
     #Add declared by community
     g.add(((dec[(prop['fip_questions'])]), fip["declared-by"], URIRef(prop['community'])))
     g.add((URIRef(prop['community']), RDF.type, fip['FAIR-Implementation-Community']))
+    g.add((URIRef(prop['community']), RDFS.label, Literal("A Community")))
     #Add refers-to-question
     g.add(((dec[(prop['fip_questions'])]), fip["refers-to-question"], fip[(prop['fip_questions'])]))
 
