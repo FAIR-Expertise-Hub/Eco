@@ -122,6 +122,7 @@ for file_id in dmp_file_ids:
                             graph.add((fdo.UniversityResearchDataManagement, fdo.hasImpactOn, question_node))
                             graph.add((fdo.FacultyResearchDataManagement, fdo.hasImpactOn, question_node))
                             graph.add((fdo.DepartmentResearchDataManagement, fdo.hasImpactOn, question_node))
+                            graph.add((question_node, fdo.recommendedAnswer, Literal("Full name, Role, University Email, Faculty, Department and ORCID")))
                             if funder_name:
                                 graph.add((Literal(funder_name), fdo.hasImpactOn, fdo.question_node))
                             #Get Author
@@ -139,6 +140,7 @@ for file_id in dmp_file_ids:
                             graph.add((fdo.UniversityResearchDataManagement, fdo.hasImpactOn, question_node))
                             graph.add((fdo.FacultyResearchDataManagement, fdo.hasImpactOn, question_node))
                             graph.add((fdo.DepartmentResearchDataManagement, fdo.hasImpactOn, question_node))
+                            graph.add((question_node, fdo.recommendedAnswer, Literal("Full name, Role, University Email, Faculty, Department and ORCID")))
                             if funder_name:
                                 graph.add((Literal(funder_name), fdo.hasImpactOn, fdo.question_node))
 
@@ -194,6 +196,9 @@ for file_id in dmp_file_ids:
                             #Impact level
                             graph.add((fdo.FacultyResearchDataManagement, fdo.hasImpactOn, question_node))
                             graph.add((fdo.RDMPlatform, fdo.hasImpactOn, question_node))
+                            #Suggested Answer
+                            graph.add((question_node, fdo.recommendedAnswer, Literal("Yoda (rather than the two old ones), DataverseNL, OSF")))
+
 
                         if question_number == 3:
                             graph.add((question_node, fdo["questionRefersToPrincipal"], fip.F4))
@@ -202,12 +207,18 @@ for file_id in dmp_file_ids:
                             #Impact level
                             graph.add((fdo.FacultyResearchDataManagement, fdo.hasImpactOn, question_node))
 
+                        if question_number == 4:
+                            graph.add((question_node, fdo.recommendedAnswer, Literal("10 Years")))
+                        if question_number == 5:
+                            graph.add((question_node, fdo.recommendedAnswer, Literal("10 Years")))
+
                         if question_number == 6:
                             graph.add((question_node, fdo["questionRefersToPrincipal"], fip.F4))
                             # Duty level+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
                             graph.add((fdo.RDMPlatform, fdo.isResponsibleForDMPQuestion, question_node))
                             # Impact level
                             graph.add((fdo.RDMPlatform, fdo.hasImpactOn, question_node))
+                            graph.add((question_node, fdo.recommendedAnswer, Literal("Yoda (rather than the two old ones), DataverseNL, OSF")))
 
                         if question_number == 7:
                             graph.add((question_node, fdo["questionRefersToPrincipal"], fip.F4))
@@ -215,6 +226,7 @@ for file_id in dmp_file_ids:
                             graph.add((fdo.RDMPlatform, fdo.isResponsibleForDMPQuestion, question_node))
                             # Impact level
                             graph.add((fdo.RDMPlatform, fdo.hasImpactOn, question_node))
+                            graph.add((question_node, fdo.recommendedAnswer, Literal("Yoda (rather than the two old ones), DataverseNL, OSF")))
 
                         if question_number == 8:
                             graph.add((question_node, fdo["questionRefersToPrincipal"], fip.F1))
@@ -225,8 +237,11 @@ for file_id in dmp_file_ids:
                             graph.add((fdo.FacultyResearchDataManagement, fdo.hasImpactOn, question_node))
                             graph.add((fdo.DepartmentResearchDataManagement, fdo.hasImpactOn, question_node))
                             graph.add((fdo.RDMPlatform, fdo.hasImpactOn, question_node))
+                            graph.add((question_node, fdo.recommendedAnswer, Literal("RDMSupport ensures that each dataset has a PID")))
+
                             if funder_name:
                                 graph.add((Literal(funder_name), fdo.hasImpactOn, fdo.question_node))
+
 
                         if question_number == 9:
                             graph.add((question_node, fdo["questionRefersToPrincipal"], fip.F1))
@@ -246,6 +261,7 @@ for file_id in dmp_file_ids:
                             graph.add((sdo.Researcher, fdo.isResponsibleForDMPQuestion, question_node))
                             # Impact level
                             graph.add((fdo.RDMPlatform, fdo.hasImpactOn, question_node))
+                            graph.add((question_node, fdo.recommendedAnswer, Literal("Use VU data-classification tool to find out the level of security needed")))
 
                         if question_number == 11:
                             graph.add((question_node, fdo["questionRefersToPrincipal"], fip["A1.2"]))
@@ -268,6 +284,7 @@ for file_id in dmp_file_ids:
                         if template_title == "1 - VU DMP template 2021 (NWO & ZonMW certified) v1.3" and question_number in (4,5,6,10,11,12):
                             graph.add((question_node, fdo.requiredBy, fdo.VuLegalTeam))
 
+
                     #real Section index 5-------------------------------------------------------------------------------
                     if section_number == 5:
                         if question_number == 1:
@@ -278,6 +295,7 @@ for file_id in dmp_file_ids:
                             graph.add((sdo.Researcher, fdo.isResponsibleForDMPQuestion, question_node))
                             # Impact level
                             graph.add((fdo.RDMPlatform, fdo.hasImpactOn, question_node))
+                            graph.add((question_node, fdo.recommendedAnswer, Literal("Description of the data: use minimal metadata schema")))
 
                         if question_number == 2:
                             graph.add((question_node, fdo["questionRefersToPrincipal"], fip["R1.3"]))
@@ -287,7 +305,7 @@ for file_id in dmp_file_ids:
                             graph.add((sdo.Researcher, fdo.isResponsibleForDMPQuestion, question_node))
                             # Impact level
                             graph.add((fdo.RDMPlatform, fdo.hasImpactOn, question_node))
-
+                            graph.add((question_node, fdo.recommendedAnswer, Literal("Description of the data: use minimal metadata schema")))
                         if question_number == 3:
                             graph.add((question_node, fdo["questionRefersToPrincipal"], fip["R1.2"]))
                             # Duty level+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
