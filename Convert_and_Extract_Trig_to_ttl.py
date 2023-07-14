@@ -65,7 +65,7 @@ def extract_properties(trig_file):
 #print("Can you give me the path to your FIP file? (ex.FIP/CMIP6_data_FIP.trig)")
 #trig_file = input()
 # Load the FIP file
-trig_file = 'FIP/CMIP6_data_FIP.trig'
+trig_file = 'FIP/European Social Survey (ESS).trig'
 extracted_properties = extract_properties(trig_file)
 fip_uri = str(extract_fip_pubinfo(trig_file))[2:-2]
 # Add namespace for the FIP
