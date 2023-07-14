@@ -1,5 +1,5 @@
 import json, re, html, urllib.parse
-from rdflib import Graph, Literal, Namespace, RDF, URIRef, FOAF, SDO, SKOS, DC
+from rdflib import Graph, Literal, Namespace, RDF, URIRef, FOAF, SDO, SKOS, DC, RDFS
 
 
 #Different levels of things
@@ -45,6 +45,7 @@ for file_id in dmp_file_ids:
 
         # Extract and add template information
         file_node = URIRef(dmp_ns)
+        graph.add((file_node, RDFS.label, Literal("DMP with the id "+str(file_id))))
         template = dmp['template']
         template_title = template.get('title')
         template_id = template.get('id')
@@ -59,14 +60,13 @@ for file_id in dmp_file_ids:
         # Extract and add data contact information
         data_contact = dmp.get('data_contact')
         if data_contact:
-            graph.add((file_node, fdo.hasDataContact, sdo.ContactPoint))
             data_contact_name = data_contact.get('name')
             data_contact_email = data_contact.get('email')
-            graph.add((file_node, dc.title, fdo.DataContact))
+            graph.add((file_node, fdo.hasDataContact, fdo.DMPDataContact))
             if data_contact_name:
-                graph.add((sdo.ContactPoint, sdo.name, Literal(data_contact_name)))
+                graph.add((fdo.DMPDataContact, sdo.name, Literal(data_contact_name)))
             if data_contact_email:
-                graph.add((sdo.ContactPoint, sdo.email, Literal(data_contact_email)))
+                graph.add((fdo.DMPDataContact, sdo.email, Literal(data_contact_email)))
 
         # Extract and add project funder information
         funder = dmp.get('funder')
