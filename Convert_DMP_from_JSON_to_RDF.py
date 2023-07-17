@@ -92,6 +92,7 @@ for file_id in dmp_file_ids:
             section_description = remove_html_tags(section.get('description'))
 
             if section_node:
+                graph.add((file_node, fdo.consistOf, section_node))
                 graph.add((section_node, rdf.type, fdo.Section))
                 graph.add((section_node, RDFS.label, Literal("Section " + str(section_number) + " of DMP" + str(file_id))))
                 if section_title:
