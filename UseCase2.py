@@ -1,5 +1,4 @@
 from rdflib import Graph, URIRef,Namespace
-from rdflib.plugins.sparql.processor import SPARQLResult
 from rdflib.plugins.sparql import prepareQuery
 
 
