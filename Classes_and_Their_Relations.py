@@ -11,19 +11,6 @@ fip = rdflib.Namespace("https://peta-pico.github.io/FAIR-nanopubs/fip/index-en.h
 g = rdflib.Graph()
 
 
-#Class Hierarchy
-#sdo:CollegeOrUniversity
-#sdo: Grant
-#sdo: codeRepository
-#sdo: Person
-#sdo: DataandDatasets check again tho
-#sdo: Researcher
-#sdo: Periodical
-#sdo: Event
-#sdo: GovernmentOrganization
-#fip: FAIR Implementation Community
-
-
 g.add((fdo.RDMPlatform, rdf.type, rdfs.Class))
 g.add((fdo.RDMPlatform, rdfs.label, rdflib.Literal("RDMSoftware Systems, Data repositories, Data Management Platforms: Including the FIP Wizard,Yoda,Github etc..")))
 g.add((fdo.RDMSupport, rdf.type, rdfs.Class))
@@ -59,5 +46,3 @@ g.serialize(destination='C:/Users/MSI-NB/PycharmProjects/firstProject/ttl_files/
 
 
 
-
-#classes and their types
