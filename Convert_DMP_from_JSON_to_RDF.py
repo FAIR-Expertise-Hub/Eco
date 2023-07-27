@@ -1,5 +1,5 @@
-import json, re, html, urllib.parse
-from rdflib import Graph, Literal, Namespace, RDF, URIRef, FOAF, SDO, SKOS, DC, RDFS
+import json, re
+from rdflib import Graph, Literal, Namespace, RDF, URIRef, SDO, DC, RDFS
 
 
 #Different levels of things
